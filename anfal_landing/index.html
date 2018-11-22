@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/media_queries.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link href="lib/Magnific-Popup/dist/magnific-popup.css" rel="stylesheet">
 	<link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
@@ -183,11 +184,10 @@
 		<div class="interface_wrapper owl-carousel">
 			<div><img class="screen" src="img/screenshots/screen_1.png" alt=""></div>
 			<div><img class="screen" src="img/screenshots/screen_2.png" alt=""></div>
-			<div><img class="screen" src="img/screenshots/iphone_screen_6.png" alt=""></div>
+			<div><img class="screen" src="img/screenshots/screen_2.png" alt=""></div>
+			<div><img class="screen" src="img/screenshots/screen_2.png" alt=""></div>
+			<div><img class="screen" src="img/screenshots/screen_2.png" alt=""></div>
 			<div><img class="screen" src="img/screenshots/screen_3.png" alt=""></div>
-			<div><img class="screen" src="img/screenshots/screen_4.png" alt=""></div>
-			<div><img class="screen" src="img/screenshots/screen_4.png" alt=""></div>
-			<div><img class="screen" src="img/screenshots/screen_4.png" alt=""></div>
 			<div><img class="screen" src="img/screenshots/screen_4.png" alt=""></div>
 		</div>
 
@@ -222,6 +222,46 @@
 			<a href="#"><i class="fab fa-linkedin-in"></i></a>
 		</div>
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="lib/Magnific-Popup/dist/jquery.magnific-popup.js"></script>
+<!-- <script src="jquery.min.js"></script> -->
+<script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$(".owl-carousel").owlCarousel({
+    loop:true,
+    nav:false,
+    margin:20,
+    center:true,
+    autoplayTimeout:3000,
+    autoWidth:true,
+    lazyLoad:true,
+    responsiveClass:true,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1,
+            
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+});
+	});
+
+	$("#inpage_scroll_btn").magnificPopup({
+		items: {
+			src: '//www.youtube.com/watch?v=xVEfuX1wt7Q',
+			type: 'iframe'
+		}});
+	</script>
+
+</body>
+</html>
 <!-- 	<header>
 		<div class="logo"><h1>Anfal</h1></div>
 	</header>
@@ -432,9 +472,9 @@
 </script>
 
 <!-- <script type="text/javascript" src="js/index.js"></script>  -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="lib/Magnific-Popup/dist/jquery.magnific-popup.js"></script>
-<!-- <script src="jquery.min.js"></script> -->
+<script src="jquery.min.js"></script>
 <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 <script>
 	$(document).ready(function(){
@@ -469,4 +509,4 @@
 	</script>
 
 </body>
-</html>
+</html> -->

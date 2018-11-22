@@ -164,7 +164,6 @@ img,h1,.btn{
 	text-transform: uppercase;
 	text-align: center;
 	-webkit-appearance: none;
-
 }
 
 a{
@@ -173,10 +172,11 @@ a{
 	padding-top: 17px;
 	-webkit-appearance: none;
 }
+
 .btn:hover{
 	background-color: rgba(16,172,132,0.8);
-};
 }
+
 .watch_video{
 	background-color: #6a7079;
 }
@@ -285,6 +285,7 @@ h4{
 .interface{
 	background-color: #f4f4f5;
 	text-align: center;
+	padding-bottom: 20px;
 }
 .interface_wrapper{
 	display: flex;
@@ -292,8 +293,14 @@ h4{
 	align-items: center;
 	text-align: center;
 	padding-bottom: 70px;
+	background-image: url(../img/screenshots/iphone_screen_6.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	minx-height: 100vh;
 }
-
+.owl-carousel.owl-drag .owl-item{
+	margin-top: 90px;
+}
 img.screen{
 	max-width: 100%;
 	/* width: 90%; */
@@ -341,6 +348,8 @@ input,textarea{
 	margin:50px auto;
 }
 
+.owl-carousel .owl-item img{
+}
 /* html {
 	font-size: 62.5%;
 }
