@@ -53,6 +53,7 @@
 }
 body{
 	font-size: 100%;
+
 }
 
 .container {
@@ -64,11 +65,6 @@ body{
 	/* border:1px solid red; */
 }
 
-a{
-	text-decoration: none;
-	display: block;
-	padding-top: 17px;
-}
 
 h2{
 	font-family: "Montserrat";
@@ -78,6 +74,7 @@ h2{
 	text-align: center;
 	padding-top: 70px;
 	padding-bottom: 40px;	
+	-webkit-appearance: none;
 }
 
 hr{
@@ -158,21 +155,35 @@ img,h1,.btn{
 	height: 50px;
 	margin-right: 20px;
 	border-radius:5px;
-	background-color: #10ac84;
+	background-color:rgba(16,172,132);
 	color: #fff;
 	font-family: "Montserrat";
 	font-weight: 500;
 	font-style: normal;
-	font-size: 1.7rem/*17px; */
+	font-size: 16px;
 	text-transform: uppercase;
 	text-align: center;
+	-webkit-appearance: none;
 
 }
 
+a{
+	text-decoration: none;
+	display: block;
+	padding-top: 17px;
+	-webkit-appearance: none;
+}
+.btn:hover{
+	background-color: rgba(16,172,132,0.8);
+};
+}
 .watch_video{
 	background-color: #6a7079;
 }
 
+.watch_video:hover{
+	background-color: rgba(106,112,121,0.8);
+}
 
 /* Problems */
 .problems{

@@ -134,10 +134,10 @@
 	hr{
 		margin-bottom:55px;
 	}
-/*Problems*/
-.problems_wrapper{
-	padding-bottom: 50px;
-}
+	/*Problems*/
+	.problems_wrapper{
+		padding-bottom: 50px;
+	}
 	.problem{
 		margin-bottom: 35px;
 	}
@@ -194,9 +194,8 @@
 		margin-right: 15px;
 	}
 	.btn{
-		width: 150px;
-		/* height: 40px; */
-		font-size: 14px;
+		width: 170px;
+		font-size: 13px;
 	}
 	.help_project{
 		margin-right: 5px;
@@ -238,7 +237,9 @@
 	body{
 		background-color: orange;
 	}
-
+	.logo{
+		font-size: 42px;
+	}
 	h2{
 		padding-top: 20px;
 		padding-bottom: 15px;
@@ -286,28 +287,38 @@
 		max-width: 100%;
 		order:-1;
 	}
-.screen{
-			max-width: 30%;
-		}
-	.feature{
-		margin: 30px 0;
+	.screen{
+		max-width: 30%;
 	}
 
-.feature_app{
-	width: 100%;
-}
-	.btn{
-		height: 30px;
+	.feature{
+		margin: 25px 0;
+	}
+	.feature_description{
 		font-size: 14px;
 	}
 
+	.feature_app{
+		width: 100%;
+	}
+	.btn{
+		width: 160px;
+		height: 45px;
+		font-size: 12px;
+	}
 	a{
-		padding: 0px;
+		padding:15px 0;
 	}
 
-.form_input{
-	width: 70%;
-}
+/*Feature*/
+	h4{
+		font-size: 16px;
+		margin-bottom: 4px;
+	}
+
+	.form_input{
+		width: 70%;
+	}
 }
 
 /* ==============================   576 ================================= */
@@ -322,24 +333,49 @@
 		display: none;
 	}
 	h2{
-		font-size: 20px;
+		font-size: 22px;
 	}
+	
+	/*Problems*/
+	.problems_icon{
+		width: 40px;
+	}
+	h3{
+		font-size: 17px;
+	}
+	.problems_description{
+		font-size: 13px;
+	}
+	/* Feature
 	.paragraph{
 		font-size: 13.6px;
 	}
-
+	h4{
+		font-size: 15px;
+		margin-bottom: 4px;
+	}
+	.feature{
+		margin: 5px;
+	}
+	.feature_description{
+		font-size: 14px;
+	} */
 	.form_input{
-	width: 60%;
-}
+		width: 60%;
+	}
 }
 
 /* ==============================   360 ================================= */
 @media (max-width: 359.98px) {
 	body{
-		background-color: white;
+		background-color: yellow;
 	}
-		.form_input{
-	
-	width: 50%;
-}
+	.btn{
+		width: 135px;
+		height: 40px;
+		font-size: 10px;
+	}
+	.form_input{
+		width: 50%;
+	}
 }
