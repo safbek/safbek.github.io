@@ -155,7 +155,7 @@ img,h1,.btn{
 	height: 50px;
 	margin-right: 20px;
 	border-radius:5px;
-	background-color:rgba(16,172,132);
+	background-color: rgb(16,172,132);
 	color: #fff;
 	font-family: "Montserrat";
 	font-weight: 500;
@@ -170,7 +170,6 @@ a{
 	text-decoration: none;
 	display: block;
 	padding-top: 17px;
-	-webkit-appearance: none;
 }
 
 .btn:hover{
@@ -178,7 +177,7 @@ a{
 }
 
 .watch_video{
-	background-color: #6a7079;
+	background-color: rgb(106,112,121);
 }
 
 .watch_video:hover{
