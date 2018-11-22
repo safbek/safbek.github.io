@@ -86,7 +86,7 @@ hr{
 }
 
 
-img,h1,.btn{
+img,.logo,.btn{
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -295,16 +295,15 @@ h4{
 	background-image: url(../img/screenshots/iphone_screen_6.png);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	minx-height: 100vh;
+	/* smin-height: 100vh; */
 }
 .owl-carousel.owl-drag .owl-item{
-	margin-top: 90px;
-}
-img.screen{
-	max-width: 100%;
-	/* width: 90%; */
+	margin-top: 80px;
 }
 
+img.screen{
+	max-width: 100%;
+}
 
 .form_input{
 	width: 45%;	
