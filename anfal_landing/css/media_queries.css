@@ -174,7 +174,7 @@
 	}
 	.logo{
 		font-size: 45px;
-		margin-top: 12px;
+		margin-top: 15px;
 		margin-bottom: 40px;
 	}
 
@@ -305,6 +305,9 @@
 		padding: 0px;
 	}
 
+.form_input{
+	width: 70%;
+}
 }
 
 /* ==============================   576 ================================= */
@@ -321,9 +324,22 @@
 	h2{
 		font-size: 20px;
 	}
+	.paragraph{
+		font-size: 13.6px;
+	}
+
+	.form_input{
+	width: 60%;
+}
 }
 
 /* ==============================   360 ================================= */
 @media (max-width: 359.98px) {
-
+	body{
+		background-color: white;
+	}
+		.form_input{
+	
+	width: 50%;
+}
 }
