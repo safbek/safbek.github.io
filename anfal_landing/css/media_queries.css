@@ -28,9 +28,9 @@
 
 /* ==============================   1520 ================================= */
 @media (max-width: 1520px) {
-	body{
+	/* body{
 		background-color: blue;
-	} 
+	}  */
 	.logo{
 		margin-bottom: 80px;
 	}
@@ -38,9 +38,9 @@
 
 /* ==============================   1366 ================================= */
 @media (max-width: 1366px) {
-	body{
+	/* body{
 		background-color: pink;
-	} 
+	}  */
 
 	.logo{
 		margin-top: 25px;
@@ -87,9 +87,9 @@
 
 /* ==============================   1200 ================================= */
 @media (max-width: 1199.98px) {
-	body{
+	/* body{
 		background-color: yellow;
-	}
+	} */
 
 	h2{
 		font-size: 35px;
@@ -129,9 +129,9 @@
 /* ==============================   992 ================================= */
 @media (max-width: 991.98px) {
 
-	body{
-		background-color: grey;
-	} 
+	/* body{
+	 	background-color: grey;
+	 } */ 
 
 
 	.logo{
@@ -209,9 +209,9 @@
 
 /* ==============================   767 ================================= */
 @media (max-width: 767.98px) {
-	body{
+	/* body{
 		background-color: orange;
-	}
+	} */
 
 	.logo{
 		font-size: 42px;
@@ -304,9 +304,9 @@
 
 /* ==============================   576 ================================= */
 @media (max-width: 575.98px) {
-	body{
+	/* body{
 		background-color: violet;
-	}
+	} */
 	h2{
 		font-size: 22px;
 	}
@@ -406,9 +406,9 @@ img.screen{
 
 /* ==============================   360 ================================= */
 @media (max-width: 359.98px) {
-	body{
+	/* body{
 		background-color: gold;
-	}
+	} */
 	/*Header*/
 	.logo{
 		font-size: 37px;
