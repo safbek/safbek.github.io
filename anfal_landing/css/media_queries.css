@@ -28,9 +28,9 @@
 
 /* ==============================   1520 ================================= */
 @media (max-width: 1520px) {
-/* 	body{
-	background-color: pink;
-}  */
+	body{
+		background-color: blue;
+	} 
 	.logo{
 		margin-bottom: 80px;
 	}
@@ -38,9 +38,9 @@
 
 /* ==============================   1366 ================================= */
 @media (max-width: 1366px) {
-/* 	body{
-	background-color: blue;
-} */
+	body{
+		background-color: pink;
+	} 
 
 	.logo{
 		margin-top: 25px;
@@ -87,9 +87,9 @@
 
 /* ==============================   1200 ================================= */
 @media (max-width: 1199.98px) {
-/* 	body{
-	background-color: yellow;
-} */
+	body{
+		background-color: yellow;
+	}
 
 	h2{
 		font-size: 35px;
@@ -117,7 +117,8 @@
 		padding-bottom: 30px;
 	}
 	.paragraph{
-		font-size: 20px;
+		max-width: 900px;
+		font-size: 21.2px;
 		padding-bottom: 30px;
 	}
 	h4{
@@ -128,13 +129,11 @@
 /* ==============================   992 ================================= */
 @media (max-width: 991.98px) {
 
-/* 	body{
-	background-color: grey;
-} 
- */
-	.hero_right img{
-		max-width: 100%;
-	}
+	body{
+		background-color: grey;
+	} 
+
+
 	.logo{
 		font-size: 45px;
 		margin-top: 15px;
@@ -155,6 +154,9 @@
 	}
 	.hero_left{
 		margin-right: 15px;
+	}
+	.hero_right img{
+		max-width: 100%;
 	}
 	.btn{
 		width: 170px;
@@ -179,8 +181,9 @@
 		padding-bottom: 30px;
 	}
 	.paragraph{
-		font-size: 17px;
-		padding-bottom: 5px;
+		max-width: 800px;
+		font-size: 19px;
+		padding:0 15px;
 	}
 	h4{
 		font-size: 13px;
@@ -206,9 +209,10 @@
 
 /* ==============================   767 ================================= */
 @media (max-width: 767.98px) {
-/* 	body{
-	background-color: orange;
-} */
+	body{
+		background-color: orange;
+	}
+
 	.logo{
 		font-size: 42px;
 		margin: 15px 0 20px;
@@ -236,10 +240,7 @@
 	}
 
 	/*Feature*/
-	.paragraph{
-		max-width:543px;
-		font-size: 17px;
-	}
+
 	.features_wrapper{
 		-webkit-flex-wrap: wrap;
 		-moz-flex-wrap: wrap;
@@ -257,9 +258,6 @@
 		margin-right: auto;
 		max-width: 100%;
 		order:-1;
-	}
-	.screen{
-		max-width: 30%;
 	}
 
 	.feature{
@@ -286,7 +284,10 @@
 		font-size: 16px;
 		margin-bottom: 4px;
 	}
-
+	/*interface*/
+	.hidden{
+		display: none;
+	}
 	.form_input{
 		width: 70%;
 	}
@@ -303,22 +304,62 @@
 
 /* ==============================   576 ================================= */
 @media (max-width: 575.98px) {
-/* 	body{
-	background-color: violet;
-} */
-.logo{
-	margin: 15px;
-}
-	.hero_wrapper{
-		justify-content: center;
-	}
-	.hero_right{
-		display: none;
+	body{
+		background-color: violet;
 	}
 	h2{
 		font-size: 22px;
 	}
-	
+
+	.logo{
+		margin: 15px;
+	}
+
+	/*Hero*/
+	.hero_wrapper{
+		justify-content: center;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+
+	}
+
+	.hero_left{
+		flex-basis: 100%;
+	}
+	.hero_right{
+		flex-basis: 75%;
+		order:-1;
+		margin-bottom: 20px;
+
+	} 
+	.hero_right img{
+		min-width: 100%;
+	}
+
+	.hero_buttons{
+		width: 70%;
+		margin: 0 auto;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.btn{
+		margin-right: 0;
+	}
+	.help_project{
+		margin-bottom: 10px;
+	}
+
 	/*Problems*/
 	.problems_icon{
 		width: 40px;
@@ -329,35 +370,83 @@
 	.problems_description{
 		font-size: 13px;
 	}
-		/*Footer*/
-		.hr_footer{
-			width: 80%;
-			margin:15px auto;
-		}
-		input,textarea{
-			padding: 15px 0;
-		}
+	/*Features*/
+	.paragraph{
+		font-size: 16px;
+		padding-bottom: 15px;
+	}
+	/*Interface Carousel*/
+/* .interface_wrapper{
+	-webkit-background-size: 50% auto;
+	background-size: 230px auto;
+}
+.owl-carousel.owl-drag .owl-item img{
+	margin: 0 auto;
+}
+ 
+img.screen{
+	max-width: 75%;
+	}*/
+
+	/*Footer*/
+	.hr_footer{
+		width: 80%;
+		margin:15px auto;
+	}
+	input,textarea{
+		padding: 15px 0;
+	}
+	.form_input{
+		width: 90%;
+	}
+	.input_submit{
+		margin: 5px auto;
+	}
+}
+
+/* ==============================   360 ================================= */
+@media (max-width: 359.98px) {
+	body{
+		background-color: gold;
+	}
+	/*Header*/
+	.logo{
+		font-size: 37px;
+	}
+	/*Hero*/
+	.hero_title{
+		font-size: 17px;
+	}
+	.hero_description{
+		font-size: 15px;
+	}
+	.btn{
+		width: 130px;
+		height: 40px;
+		font-size: 10px;
+	}
+	/*Feature*/
+	.paragraph{
+		font-size: 14px;
+		padding-bottom: 15px;
+	}
+	/*Interface*/
+	.interface_wrapper{
+		justify-content: center;
+	}
+	.hidden_mobile{
+		display: none;
 	}
 
-	/* ==============================   360 ================================= */
-	@media (max-width: 359.98px) {
-	/* 	body{
-		background-color: yellow;
-	} */
-		.logo{
-			font-size: 37px;
-		}
-		.btn{
-			width: 130px;
-			height: 40px;
-			font-size: 10px;
-		}
+	img.screen{
+	max-width: 65%;
+} 
 
-		/*Footer*/
-		.hr_footer{
-			margin:10px auto;
-		}
-		.socials{
-			margin: -10px auto;
-		}
+	/*Footer*/
+	.hr_footer{
+		margin:10px auto;
 	}
+	.socials{
+		margin: -10px auto;
+	}
+}
