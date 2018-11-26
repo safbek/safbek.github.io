@@ -25,6 +25,18 @@
 }
 
 
+/* ==============================   1920 ================================= */
+@media (max-width: 1920px) {
+	 /* body{
+	 		background-color: black;
+	 		} */
+.interface_wrapper{
+	width: 100%;
+	justify-content: center;
+}
+
+
+}
 
 /* ==============================   1520 ================================= */
 @media (max-width: 1520px) {
@@ -312,7 +324,7 @@
 	}
 
 	.logo{
-		margin: 15px;
+		margin: 15px 0 35px;
 	}
 
 	/*Hero*/
@@ -400,7 +412,7 @@ img.screen{
 		width: 90%;
 	}
 	.input_submit{
-		margin: 5px auto;
+		margin: 15px auto;
 	}
 }
 
