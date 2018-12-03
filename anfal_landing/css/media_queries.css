@@ -30,12 +30,6 @@
 	 /* body{
 	 		background-color: black;
 	 		} */
-.interface_wrapper{
-	width: 100%;
-	justify-content: center;
-}
-
-
 }
 
 /* ==============================   1520 ================================= */
@@ -324,7 +318,7 @@
 	}
 
 	.logo{
-		margin: 15px 0 35px;
+		margin: 17px 0 30px;
 	}
 
 	/*Hero*/
