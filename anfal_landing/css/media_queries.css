@@ -444,10 +444,9 @@ img.screen{
 		display: none;
 	}
 
-	img.screen{
+img.center_screen{
 	max-width: 65%;
-} 
-
+}
 	/*Footer*/
 	.hr_footer{
 		margin:10px auto;
