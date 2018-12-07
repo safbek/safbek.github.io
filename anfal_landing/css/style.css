@@ -300,16 +300,19 @@ h4{
 }
 
 .wrapper_img{
-	/* box-shadow: 10px 10px 16px 0px rgba(92,95,101,.10); */
-	margin: 7px;
+	margin-right: 15px;
 }
 
 img.screen{
 	max-width: 100%;
-	box-shadow: 10px 10px 12px 0px rgba(92,95,101,.10);
-	 /*box-shadow: 5px 10px 20px 2px rgba(61,61,62,.15);
-	 box-shadow:15px 5px 12px 66px rgba(92,95,101,.28); */
+	box-shadow: 10px 10px 12px 0px rgba(92,95,101,.4);
 } 
+
+img.center_screen{
+	margin-right: 6px;
+	max-width: 100%;
+
+}
 
 /* .owl-carousel.owl-drag .owl-item{
 	margin-top: 80px;
