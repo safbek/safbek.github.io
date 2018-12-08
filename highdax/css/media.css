@@ -284,6 +284,15 @@
 	 		}
 
 	 		/*Header Styles*/
+
+	 		.slide_one .owl-dots .owl-dot,
+	 		.slide_two .owl-dots .owl-dot{
+	 			margin-top: 30px;
+	 		}
+
+	 		header{
+	 			padding-bottom: 15px;
+	 		}
 	 		.header_wrapper{
 	 			padding-top: 25px;
 	 		}
@@ -327,6 +336,9 @@
 	 			padding-top: 10px;
 	 		}
 	 		/*Portfolio Styles*/
+	 		.portfolio {
+	 			padding-bottom: 15px;
+	 		}
 	 		.desktop_portfolio{
 	 			display: none;
 	 		}
@@ -476,6 +488,28 @@
 	 		body{
 	 			background-color: violet;
 	 		}
+
+	 		.br_mobile{
+	 			display: block;
+	 		}
+	 		.portfolio, .features, .theme{
+	 			padding-top: 30px;
+	 		}
+
+	 		.slide_one .owl-dots .owl-dot,
+	 		.slide_two .owl-dots .owl-dot{
+	 			margin-top: 20px;
+	 		}
+
+	 		.portfolio_title, .feature_title, .theme_title{
+	 			font-size: 22px;
+	 			line-height: 1.1;
+	 		}
+
+	 		.portfolio_title span, .feature_title span, .theme_title span{
+	 			font-size: 13px;
+	 		}
+
 	 		.header_title{
 	 			padding: 10px;
 	 			max-width: 280px;
@@ -486,19 +520,27 @@
 	 		.header_text{
 	 			font-size: 16px;
 	 		}
+	 		/*Portfoliio*/
+	 		.portfolio_wrapper{
+	 			margin-top: 40px;
+	 		}
 
+	 		.portfolio_title{
+	 			font-size: 22px;
+	 		}
 	 		/*Features Styles*/
 	 		.features{
 	 			padding-bottom: 60px;
 	 		}
-h4{
-	padding-bottom: 5px;
-}
+	 		h4{
+	 			padding-bottom: 5px;
+	 		}
 	 		.feature{
 	 			flex-basis: 100%;
-	 			margin: 25px auto 0;
+	 			margin: 26px auto 0;
 	 		}
 	 		.icon{
+	 			margin-right: 18px;
 	 			flex-basis: 19px;
 	 		}
 	 		/*About us*/
@@ -517,6 +559,56 @@ h4{
 	 		.about_us_info span{
 	 			font-size: 13px;
 	 		}
+
+	 		/*Get Started Styles*/
+	 		.get_started_title{
+	 			font-size: 18px;
+	 		}
+
+	 		.get_started_description{
+	 			font-size: 16px;
+	 		}
+	 		/*Theme Styles*/
+	 		.theme{
+	 			padding-bottom: 30px;
+	 		}
+	 		.theme_wrapper{
+	 			width: 95%;
+	 			padding-top: 30px;
+	 		}
+
+	 		.theme_icon{
+	 			flex-basis: 7%;
+	 		}
+
+	 		.theme_text{
+	 			font-size: 16px;
+	 			flex-basis: 100%;
+	 		}
+	 		/*Footer*/
+
+	 		.contact{
+	 			padding-top: 50px;
+	 			padding-bottom: 15px;
+	 		}
+
+	 		.contact_text{
+	 			font-size: 13px;
+	 			padding: 5px 0;
+	 		}
+
+	 		.social_icons{
+	 			max-width: 135px;
+	 		}
+	 		.brand{
+	 			width: 30px;
+	 			height: 30px;
+	 		}
+
+	 		.contact__copy{
+	 			padding-top: 25px;
+	 			font-size: 13px;
+	 		}
 	 	}
 
 	 	/* ==============================   360 ================================= */
@@ -527,5 +619,7 @@ h4{
 
 	 	}
 
-
+body{
+	background-color: #fff;
+}
 /* ( rgba(48, 49, 52, 1), rgba(48, 49, 52, 0.8)) */

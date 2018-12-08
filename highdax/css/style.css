@@ -24,6 +24,9 @@ img{
 	margin-left: auto;
 }
 
+.br_mobile{
+	display: none;
+}
 /*Carousel Header*/
 .owl-theme .owl-dots .owl-dot span{
 	background-color: #212225;
