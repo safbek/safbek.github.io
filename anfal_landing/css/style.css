@@ -303,9 +303,12 @@ h4{
 	margin-right: 15px;
 }
 
+.center_block{
+	margin-right: 4px;
+}
 img.screen{
 	max-width: 100%;
-	box-shadow: 10px 10px 12px 0px rgba(92,95,101,.4);
+	box-shadow: 7px 7px 12px 0px rgba(92,95,101,.4);
 } 
 
 img.center_screen{
