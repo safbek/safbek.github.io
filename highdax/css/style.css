@@ -24,9 +24,11 @@ img{
 	margin-left: auto;
 }
 
-.br_mobile{
+.br_mobile,.mobile_nav{
 	display: none;
 }
+
+
 /*Carousel Header*/
 .owl-theme .owl-dots .owl-dot span{
 	background-color: #212225;
@@ -78,6 +80,7 @@ header{
 	background-position: 50% 50%;
 	color: #fff;
 	padding-bottom: 50px;
+	position: relative;
 }
 .header_wrapper{
 	display: flex;
@@ -473,3 +476,61 @@ h4{
 	font-size: 20px;
 	
 }
+
+
+/*Mobile Menu Styles*/
+
+/* Dropdown Button */
+.dropbtn {
+	margin-top: 3px;
+ background-color: rgb(249,129,43); 
+  color: white;
+  padding: 3px 8px;
+  border-radius:3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #f9812b;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: absolute;
+  left: 75%;
+  display: inline-block;
+  margin-left: 35px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(49,50,54,.5);
+  min-width: 260px;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0;
+  text-align: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+/* .dropdown-content a:hover {background-color: #ddd} */
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

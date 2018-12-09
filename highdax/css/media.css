@@ -509,6 +509,16 @@
 	 		.portfolio_title span, .feature_title span, .theme_title span{
 	 			font-size: 13px;
 	 		}
+	 		/*Mobile MEnu*/
+	 		.logo_wrapper{
+	 			margin-left: 15px;
+	 		}
+	 		.dropdown {
+	 			position: absolute;
+	 			left: 85%;
+	 			display: inline-block;
+	 			margin-left: -13px;
+	 		}
 
 	 		.header_title{
 	 			padding: 10px;
@@ -520,6 +530,8 @@
 	 		.header_text{
 	 			font-size: 16px;
 	 		}
+
+
 	 		/*Portfoliio*/
 	 		.portfolio_wrapper{
 	 			margin-top: 40px;
@@ -528,6 +540,8 @@
 	 		.portfolio_title{
 	 			font-size: 22px;
 	 		}
+
+
 	 		/*Features Styles*/
 	 		.features{
 	 			padding-bottom: 60px;
@@ -538,6 +552,10 @@
 	 		.feature{
 	 			flex-basis: 100%;
 	 			margin: 26px auto 0;
+	 		}
+
+	 		.feature_description{
+	 			font-size: 14px;
 	 		}
 	 		.icon{
 	 			margin-right: 18px;
@@ -616,10 +634,13 @@
 	 		body{
 	 			background-color: gold;
 	 		}
+	 		/*Mobile Menu Styles*/
+	 		.dropdown {
+	 			margin-left: -30px;
+	 		}
 
 	 	}
-
+/* 
 body{
 	background-color: #fff;
-}
-/* ( rgba(48, 49, 52, 1), rgba(48, 49, 52, 0.8)) */
+	}  */

@@ -30,7 +30,20 @@
 						<li><a href="#">themes</a></li>
 						<li><a href="#">contact</a></li>
 					</ul>
-				</nav> 
+				</nav>
+
+				<nav class="dropdown mobile_nav">
+					<button onclick="myFunction()" class="dropbtn">Menu</button>
+					<ul id="myDropdown" class="dropdown-content">
+						<li><a href="#">home</a></li>
+						<li><a href="#">portfolio</a></li>
+						<li><a href="#">about us</a></li>
+						<li><a href="#">services</a></li>
+						<li><a href="#">themes</a></li>
+						<li><a href="#">contact</a></li>
+					</ul>
+				</nav>
+
 			</div>
 
 			<div class="slide_one owl-carousel owl-theme">
@@ -335,12 +348,12 @@
 
 	<section class="features">
 		
-			<h2 class="feature_title">
-				A few reasons<br class="br_mobile"> why you'll love Highdax<br>
-				<span>Highdax is a minimalistic, mobile-optimized theme<br class="br_mobile"> with responsive layout and retina-ready</span>
-			</h2>
+		<h2 class="feature_title">
+			A few reasons<br class="br_mobile"> why you'll love Highdax<br>
+			<span>Highdax is a minimalistic, mobile-optimized theme<br class="br_mobile"> with responsive layout and retina-ready</span>
+		</h2>
 
-<div class="container features_container">
+		<div class="container features_container">
 			<div class="features_wrapper">
 
 				<div class="feature">
@@ -420,11 +433,11 @@
 	</section>
 	<section class="theme">
 		
-			<h2 class="theme_title">
-				A few easy steps<br class="br_mobile"> to create responsive theme<br>
-				<span>Highdax is minimalistic, mobile-optimized theme<br class="br_mobile"> with responsive layout and retina-ready</span>
-			</h2>
-<div class="container theme_container">
+		<h2 class="theme_title">
+			A few easy steps<br class="br_mobile"> to create responsive theme<br>
+			<span>Highdax is minimalistic, mobile-optimized theme<br class="br_mobile"> with responsive layout and retina-ready</span>
+		</h2>
+		<div class="container theme_container">
 			<div class="theme_wrapper">
 				<div class="theme_left">
 					<img src="img/MacBook.png" alt="macBook">
@@ -461,11 +474,11 @@
 			<div  class="brand brand_tumblr"><a href=# class="brand tumblr"><i class="fab fa-tumblr"></i></a></div>
 			<div  class="brand brand_linkedin"> <a href=# class="brand linkedin"><i class="fab fa-linkedin-in"></i></a></div>
 			<div  class="brand brand_vimeo"><a href=# class="brand vimeo"><i class="fab fa-vimeo-v"></i></a></div> 
-			</div>
+		</div>
 
-        	<div class="contact__copy">Copyright © 2015 Highdex Design</div>
-        
-      </footer>
+		<div class="contact__copy">Copyright © 2015 Highdex Design</div>
+
+	</footer>
 <!-- 	<br>
 <br>
 <br>
@@ -476,43 +489,43 @@
 <br> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="lib/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-	<!-- <script>
-		$( document ).ready(function() {
-	
-			$( ".cross" ).hide();
-			$( ".menu" ).hide();
-			$( ".hamburger" ).click(function() {
-				$( ".menu" ).slideToggle( "slow", function() {
-					$( ".hamburger" ).hide();
-					$( ".cross" ).show();
-				});
-			});
-	
-			$( ".cross" ).click(function() {
-				$( ".menu" ).slideToggle( "slow", function() {
-					$( ".cross" ).hide();
-					$( ".hamburger" ).show();
-				});
-			});
-	
-		});
-	</script> -->
-	<script>
-		$('.slide_one').owlCarousel({
-			loop:true,
-			margin:10,
-			nav:false,
-			items:1,
-			autoplay:true,
-		})
+<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
 
-		$('.slide_two').owlCarousel({
-			loop:true,
-			margin:10,
-			/*nav:true,*/
-			items:1,
-			autoplay:true,
-		})
-	</script>
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			}
+		}
+	}
+}
+</script>
+<script>
+	$('.slide_one').owlCarousel({
+		loop:true,
+		margin:10,
+		nav:false,
+		items:1,
+		autoplay:true,
+	})
+
+	$('.slide_two').owlCarousel({
+		loop:true,
+		margin:10,
+		/*nav:true,*/
+		items:1,
+		autoplay:true,
+	})
+</script>
 </body>
 </html>
