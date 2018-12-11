@@ -14,14 +14,14 @@
 <body>
 	<header>
 		<div class="container">
-
-			<div class="header_wrapper">
+			<!-- DESKTOP NAV -->
+			<div class="header_wrapper desktop_nav">
 				<div class="logo_wrapper">
 					<div class="logo">highdax</div>
 					<div class="logo_label">design</div>
 				</div>
 
-				<nav class="header_nav desktop_nav">
+				<nav class="header_nav">
 					<ul>
 						<li><a href="#">home</a></li>
 						<li><a href="#">portfolio</a></li>
@@ -32,18 +32,30 @@
 					</ul>
 				</nav>
 
-				<nav class="dropdown mobile_nav">
-					<button onclick="myFunction()" class="dropbtn">Menu</button>
-					<ul id="myDropdown" class="dropdown-content">
-						<li><a href="#">home</a></li>
-						<li><a href="#">portfolio</a></li>
-						<li><a href="#">about us</a></li>
-						<li><a href="#">services</a></li>
-						<li><a href="#">themes</a></li>
-						<li><a href="#">contact</a></li>
-					</ul>
-				</nav>
+			</div>
 
+			<!-- MOBILE NAV -->
+			<div class="mobile_nav">
+				<div class="mobile_wrapper">
+					
+					<div class="logo_wrapper">
+						<div class="logo">highdax</div>
+						<div class="logo_label">design</div>
+					</div>
+
+					<nav class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">Menu</button>
+						<ul id="myDropdown" class="dropdown-content">
+							<li><a href="#">home</a></li>
+							<li><a href="#">portfolio</a></li>
+							<li><a href="#">about us</a></li>
+							<li><a href="#">services</a></li>
+							<li><a href="#">themes</a></li>
+							<li><a href="#">contact</a></li>
+						</ul>
+					</nav>
+
+				</div>
 			</div>
 
 			<div class="slide_one owl-carousel owl-theme">

@@ -510,15 +510,9 @@
 	 			font-size: 13px;
 	 		}
 	 		/*Mobile MEnu*/
-	 		.logo_wrapper{
-	 			margin-left: 5px;
-	 		}
-	 		.dropdown {
-	 			position: absolute;
-	 			left: 85%;
-	 			display: inline-block;
-	 			margin-left: -13px;
-	 		}
+/* 	 		.logo_wrapper{
+	margin-left: 5px;
+} */
 
 	 		.header_title{
 	 			padding: 10px;
@@ -634,13 +628,10 @@
 	 		body{
 	 			background-color: gold;
 	 		}
-	 		/*Mobile Menu Styles*/
-	 		.dropdown {
-	 			margin-left: -30px;
-	 		}
+	
 
 	 	}
 
-body{
+ body{
 	background-color: #fff;
 	} 
