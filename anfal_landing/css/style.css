@@ -11,9 +11,9 @@
 	font-family: "Montserrat";
 	font-weight: 700;
 	font-style: normal;
-	src: url("../fonts/ttf/Montserrat-Bold.ttf") format("ttf"),
-	url("../fonts/webfonts/Montserrat-Bold.woff2") format("woff2"),
-	url("../fonts/webfonts/Montserrat-Bold.woff") format("woff");
+	src: url("../fonts/Montserrat-Bold/Montserrat-Bold.ttf") format("ttf"),
+	url("../fonts/Montserrat-Bold/Montserrat-Bold.woff2") format("woff2"),
+	url("../fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff");
 }
 
 /** Montserrat Regular **/
@@ -21,9 +21,9 @@
 	font-family: "Montserrat";
 	font-weight: 400;
 	font-style: normal;
-	src: url("../fonts/ttf/Montserrat-Regular.ttf") format("ttf"),
-	url("../fonts/webfonts/Montserrat-Regular.woff2") format("woff2"),
-	url("../fonts/webfonts/Montserrat-Regular.woff") format("woff");
+	src: url("../fonts/Montserrat-Regular/Montserrat-Regular.ttf") format("ttf"),
+	url("../fonts/Montserrat-Regular/Montserrat-Regular.woff2") format("woff2"),
+	url("../fonts/Montserrat-Regular/Montserrat-Regular.woff") format("woff");
 }
 
 /** Montserrat Light **/
@@ -31,9 +31,9 @@
 	font-family: "Montserrat";
 	font-weight: 300;
 	font-style: normal;
-	src: url("../fonts/ttf/Montserrat-Light.ttf") format("ttf"),
-	url("../fonts/webfonts/Montserrat-Light.woff2") format("woff2"),
-	url("../fonts/webfonts/Montserrat-Light.woff") format("woff");
+	src: url("../fonts/Montserrat-Light/Montserrat-Light.ttf") format("ttf"),
+	url("../fonts/Montserrat-Light/Montserrat-Light.woff2") format("woff2"),
+	url("../fonts/Montserrat-Light/Montserrat-Light.woff") format("woff");
 }
 
 /** Montserrat Medium **/
@@ -41,9 +41,9 @@
 	font-family: "Montserrat";
 	font-weight: 500;
 	font-style: normal;
-	src: url("../fonts/ttf/Montserrat-Medium.ttf") format("ttf"),
-	url("../fonts/webfonts/Montserrat-Medium.woff2") format("woff2"),
-	url("../fonts/webfonts/Montserrat-Medium.woff") format("woff");
+	src: url("../fonts/Montserrat-Medium/Montserrat-Medium.ttf") format("ttf"),
+	url("../fonts/Montserrat-Medium/Montserrat-Medium.woff2") format("woff2"),
+	url("../fonts/Montserrat-Medium/Montserrat-Medium.woff") format("woff");
 }
 * {
 	padding: 0;
@@ -117,15 +117,11 @@ img,.logo,.btn{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	/* padding-bottom: 150px; */
 	padding-bottom: 70px;
-
 }
 
 .hero_left{
-	flex-basis: 54%;
-	/* border:1px solid green; */
-	
+	flex-basis: 54%;	
 }
 
 .hero_right{
@@ -144,8 +140,8 @@ img,.logo,.btn{
 .hero_buttons{
 	display: flex;
 }
+
 .btn{
-	/* display: inline-block; */
 	width: 230px;
 	height: 50px;
 	margin-right: 20px;
@@ -220,7 +216,6 @@ h3{
 	color: #a9abaf;
 }
 
-
 /*Features*/
 h4{
 	font-family: "Montserrat";
@@ -243,7 +238,6 @@ h4{
 
 .features_wrapper{
 	display: flex;
-	/* justify-content: center; */
 	align-items: center;
 	padding-bottom: 70px;
 }
@@ -293,10 +287,6 @@ h4{
 	align-items: center;
 	text-align: center;
 	padding-bottom: 30px;
-	/*background-image: url(../img/screenshots/iphone_screen_6.png);
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	 */
 }
 
 .wrapper_img{
@@ -316,18 +306,13 @@ img.center_screen{
 	max-width: 100%;
 }
 
-/* .owl-carousel.owl-drag .owl-item{
-	margin-top: 80px;
-}
-*/
-
 .form_input{
 	width: 45%;	
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-
 }
+
 input,textarea{
 	border-bottom:1px solid grey;
 	padding: 20px 0;
