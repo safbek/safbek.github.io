@@ -353,6 +353,10 @@
         padding-top: 30px;
         padding-bottom: 10px;
       }
+
+      .icon {
+        height: 40px;
+      }
       
       /* ABOUT US */
       .info_about_us {
@@ -393,6 +397,6 @@
 
     }
 
-body{
+/* body{
 background-color: #fff;
-}
+} */
