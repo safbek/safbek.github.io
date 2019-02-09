@@ -71,6 +71,10 @@
       body{
         background-color: yellow;
       }
+
+      .item_img_hover {
+        height: 99%;
+      }
       
     }
 
@@ -329,6 +333,7 @@
       body{
         background-color: violet;
       }
+
       /* COMMON STYLES */
       h1 {
         font-size: 21px;
@@ -371,9 +376,10 @@
       }
 
       /* FOOTER */
-      .about_sarajevo {
-        font-size: 10px;
+      .footer_wrap {
+        font-size: 9px;
       }
+
       .footer_explore {
         display: none;
       }
@@ -397,6 +403,6 @@
 
     }
 
-/* body{
+body{
 background-color: #fff;
-} */
+}
