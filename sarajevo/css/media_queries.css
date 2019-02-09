@@ -1,0 +1,398 @@
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+/* ==============================   1920 ================================= */
+@media (max-width: 1920px) {
+   /* body{
+      background-color: black;
+      } */
+      .mobile_nav{
+        display: none;
+      }
+
+    }
+
+    /* ==============================   1520 ================================= */
+    @media (max-width: 1520px) {
+      body{
+        background-color: blue;
+      }
+
+
+    }
+
+
+    /* ==============================   1366 ================================= */
+    @media (max-width: 1366px) {
+      body{
+        background-color: pink;
+      }
+
+
+    }
+
+    /* ==============================   1200 ================================= */
+    @media (max-width: 1199.98px) {
+      body{
+        background-color: yellow;
+      }
+      
+    }
+
+    /* ==============================   992 ================================= */
+    @media (max-width: 991.98px) {
+
+      body{
+        background-color: grey;
+      }
+
+      /* COMMON STYLES */
+      h1 {
+        padding-top: 60px;
+      }
+
+      .description {
+        padding: 55px 5px;
+      }
+      
+      /*FEATURE PART ONE*/
+      .features_part_one {
+        width: 90%;
+        flex-wrap: wrap;
+      }
+
+      .features_part_one .icon {
+        height: 80px;
+      }
+
+      /*FEATURE PART TWO*/
+      .features_part_two {
+        width: 100%;
+        flex-wrap: wrap;
+        padding-top: 0;
+      }
+
+
+     .block_middle{
+        order: -1;
+        padding-top: -50px;
+    }
+
+    .block_left, .block_right{
+      flex-basis: 50%;
+    }
+
+    .block_middle {
+      flex-basis: 100%;
+    }
+
+    .block_middle img{
+      max-width: 80%;
+    }
+
+    .member_wrap{
+      padding-top: 10px;
+    }
+
+    /* TEAM */
+    .team_list{
+      width: 80%;
+    }
+
+    .member_img_hover {
+      height: 95%;
+    }
+
+    /* FEEDBACK */
+    .form_contact {
+      max-width: 190px;
+    }
+
+    .about_sarajevo,
+     .footer_subscribe {
+      max-width: 220px;
+     }
+
+    .input_subscribe{
+      width: 200px;
+      height: 40px;
+    }
+
+    .button_subscribe {
+      top: 10px;
+      right: 30px;
+    }
+
+    }
+
+    /* ==============================   767 ================================= */
+    @media (max-width: 767.98px) {
+      body{
+        background-color: green;
+      }
+      /* COMMON STYLES */
+      h1 {
+        font-size: 26px;
+        padding-top: 45px;
+        padding-bottom: 18px;
+      }
+
+      .description {
+        padding: 35px 0;
+      }
+
+      /* HEADER */
+      .home_description_text {
+        margin-top: 130px;
+      }
+
+      .logo_in_description {
+        font-size: 50px;
+      }
+
+      .logo_label_in_description {
+        left: 108px;
+        top: -26px;
+      }
+
+      .home_href {
+        font-size: 33px;
+      }
+
+      .text_under_description:before {
+        width: 25px;
+        margin-right: 18px;
+      }
+
+      .text_under_description:after {
+        width: 25px;
+        margin-left: 18px;
+      }
+
+      .home_social_icons{
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      /* FEATURES PART ONE*/
+      .features {
+        padding-bottom: 50px;
+      }
+
+      .features_part_one, .features_part_two {
+        padding-top: 50px;
+      }
+      
+      /* FEATURES PART TWO*/
+
+     .block_left,.block_middle, .block_right{
+       flex-basis: 100%;
+
+     }
+
+     .feature {
+      justify-content: center;
+     }
+
+      .icon {
+        height: 80px;
+      }
+      
+      /* WORKS */
+      ul {
+        width: 75%;
+      }
+      /* TEAM */
+      .team {
+        padding-bottom: 70px;
+      }
+
+      .team_list{
+        width: 100%;
+        justify-content: center;
+      }
+
+      /* ABOUT US */
+      .about_us {
+        padding-bottom: 75px;
+      }
+
+      .text_about_us {
+        font-size: 12px;
+      }
+
+      .text_about_us span{
+        font-size: 37px;
+      }
+
+      /*Feedback*/
+      .container {
+        max-width: 600px;
+      }
+
+      .feedback_wrap{
+        margin-bottom: 100px;
+
+      }
+
+      .footer_wrap {
+        font-size: 11px;
+        padding: 20px 0 20px;
+      }
+
+      .logo_footer {
+        padding-bottom: 20px;
+      }
+
+      input, textarea{
+        width: 80%;
+      }
+
+      .title_feedback_form {
+        padding-left: 25px;
+        font-size: 25.8px;
+      }
+
+      .form_input{
+        justify-content: center;
+      }
+
+
+      .form_contact {
+        max-width: 225px;
+      }
+
+      .title_contact{
+        font-size: 13.8px;
+      }
+
+     .input_submit {
+       font: 14px;
+      }
+
+    .social_feedback {
+      font-size: 17px;
+    }
+
+    .input_subscribe{
+      width: 160px;
+      height: 25px;
+    }
+
+    .button_subscribe {
+      right: 58px;
+    }
+
+    .footer_href {
+      max-width: 150px;
+    }
+
+  }
+
+    /* ==============================   576 ================================= */
+    @media (max-width: 575.98px) {
+      body{
+        background-color: violet;
+      }
+      /* COMMON STYLES */
+      h1 {
+        font-size: 21px;
+      }
+
+      .description {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        font-size: 14px;
+      }
+
+      .mobile_nav{
+        display: block;
+      }
+
+      .desktop_nav {
+        display: none;
+      }
+
+      /* HEADER */
+      .home_social_icons {
+        padding-top: 30px;
+        padding-bottom: 10px;
+      }
+      
+      /* ABOUT US */
+      .info_about_us {
+        flex-basis: 50%;
+      }
+
+      /* WORKS */
+      .filter_menu_list {
+        width: 85%;
+        font-size: 13px;
+        padding-bottom: 40px;
+      }
+
+      /* FOOTER */
+      .about_sarajevo {
+        font-size: 10px;
+      }
+      .footer_explore {
+        display: none;
+      }
+
+      .footer_subscribe {
+        max-width: 170px;
+      }
+
+      .button_subscribe {
+        right: 20px;
+      }
+
+    }
+
+    /* ==============================   360 ================================= */
+    @media (max-width: 359.98px) {
+      body{
+        background-color: gold;
+      }
+  
+
+    }
+
+/* body{
+background-color: #fff;
+} */
