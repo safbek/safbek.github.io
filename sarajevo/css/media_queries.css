@@ -41,11 +41,8 @@
    /* body{
       background-color: black;
       } */
-      .mobile_nav{
-        display: none;
-      }
-
-    }
+  
+}
 
     /* ==============================   1520 ================================= */
     @media (max-width: 1520px) {
@@ -53,15 +50,119 @@
         background-color: blue;
       }
 
-
     }
 
 
     /* ==============================   1366 ================================= */
-    @media (max-width: 1366px) {
+    @media (min-width: 1366px) {
       body{
         background-color: pink;
       }
+
+      /* COMMON STYLES */
+    h1 {
+      font-size: 31px;
+    }
+
+    .description {
+      font-size: 19px;
+    }
+
+    .wrapper_about_us, .feedback_wrap, .footer_wrap  {
+        max-width: 1050px;
+        margin: 0 auto;
+      }
+
+      /* HEADER */
+      .header_wrapper {
+        max-width: 1200px;
+      }
+
+      .logo {
+        font-size: 42px;
+      }
+
+      .fa-circle{
+        font-size: 8px;
+        top: 30px;
+        left: 178px;
+    }
+
+    ul {
+      font-size: 22px;
+    }
+
+    .logo_in_description {
+      font-size: 65px;
+    }
+
+    .logo_label_in_description{
+      position: relative;
+      left: 137px;
+      top: -30px;
+      font-size: 11px;
+    }
+
+    .home_href {
+      font-size: 55px;
+    }
+
+    .text_under_description {
+      font-size: 23px;
+    }
+
+    .home_social_icons {
+      font-size: 21px;
+    }
+
+    /* FEATURES */
+    h2 {
+      font-size: 22px;
+    }
+
+    .features {
+       font-size: 13px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    .features_part_one, .features_part_two {
+      max-width: 1150px;
+    }
+
+    .block_left, .block_middle, .block_right {
+      flex-basis: 35%;
+    }
+
+    /* WORKS */
+    .filter_menu_list {
+      font-size: 18px;
+    }
+
+    .porfolio_item {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ABOUT US */
+    .circle_block {
+      margin-top: 35px;
+    }
+
+    /* FOOTER */
+    .feedback_wrap {
+      margin-bottom: 115px;
+    }
+    footer .logo {
+      font-size: 21px;
+    }
+    footer .fa-circle{
+      top: 17px;
+      left: 95px;
+      font-size: 5px;
+    }
 
 
     }
@@ -71,6 +172,12 @@
       body{
         background-color: yellow;
       }
+      /* WORKS 
+      .porfolio_item {
+        max-width: 700px;
+        justify-content: space-between;
+        margin: 0 auto;
+      }*/
 
       .item_img_hover {
         height: 99%;
@@ -380,6 +487,10 @@
         font-size: 9px;
       }
 
+      .about_sarajevo {
+        max-width: 157px;
+      }
+
       .footer_explore {
         display: none;
       }
@@ -392,6 +503,10 @@
         right: 20px;
       }
 
+      .fa-long-arrow-alt-right {
+        font-size: 22px;
+      }
+
     }
 
     /* ==============================   360 ================================= */
@@ -399,10 +514,93 @@
       body{
         background-color: gold;
       }
+
+      /* COMMON STYLES */
+      h1 {
+        font-size: 19px;
+      }
+
+      h2 {
+        font-size: 17px;
+      }
+
+      .description {
+        font-size: 12px;
+      }
+
+      /* HEADER */
+      .home_description_text {
+        margin-top: 75px;
+      }
+
+      .logo_in_description {
+        font-size: 30px;
+      }
+
+      .logo_label_in_description {
+        font-size: 5px;
+        left: 68px;
+        top: -21px;
+      }
+
+      .home_href {
+        font-size: 20px;
+      }
+
+      .text_under_description {
+        font-size: 12.5px;
+      }
+
+      .text_under_description:before {
+        width: 10px;
+        margin-right: 10px;
+      }
+
+      .text_under_description:after {
+        width: 10px;
+        margin-left: 10px;
+      }
+
+      .home_social_icons{
+        padding-top: 30px;
+        padding-bottom: 25px;
+      }
+
+      /* FEATURES */
+
+      .features {
+        font-size: 10px;
+      }
+
+      .icon {
+        width:100px;
+        padding-right: 10px;
+      }
+
+      /* WORKS */
+      .filter_menu_list {
+        width: 90%;
+        font-size: 10.5px;
+      }
+
+      .porfolio_item img {
+        width: 280px;
+        height: 210px;
+      }
+
+      /* FEEDBACK */
+      .social_feedback {
+        display: none;
+      }
+
+      /* FOOTER */
+      .about_sarajevo {
+        display: none;
+      }
   
 
     }
 
-body{
+/*  body{
 background-color: #fff;
-}
+}  */

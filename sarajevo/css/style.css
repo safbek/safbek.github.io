@@ -63,6 +63,10 @@ img{
 	display: none;
 } */
 
+.mobile_nav{
+  display: none;
+}
+
 .title{
 	text-align: center;
 }
@@ -144,9 +148,6 @@ h2{
 	color: #4c76ff;
 }
 
-.fa-circle{
-	
-}
 .header_nav{
 	display: flex;
 	justify-content: flex-end;
@@ -292,7 +293,7 @@ li:hover{
 	margin: auto;
 	max-width: 780px;
 	text-align: center;
-	padding: 70px 0;
+	padding: 60px 0;
 }
 
 .block_left, .block_middle, .block_right{
@@ -459,7 +460,7 @@ span:hover{
 }
 
 .circle_block {
-	margin-top: 20px;
+	margin-top: 25px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
