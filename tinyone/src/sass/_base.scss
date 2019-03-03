@@ -38,7 +38,7 @@ img{
 }
 
 .container {
- border:1px solid red;
+ /* border:1px solid red; */
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -50,10 +50,18 @@ li {
   list-style-type: none;
 }
 
-h2 {
-  font-family: 'source_sans_probold', sans-serif;
-  font-size: 32px;
+.fas, .fab, .far {
   color: #000;
+}
+
+h1, h2, h3, h4,
+.logo-text {
+  color: #000;
+  font-family: 'source_sans_probold', sans-serif;
+}
+
+h2 {
+  font-size: 32px;
   padding-bottom: 20px;
 }
 

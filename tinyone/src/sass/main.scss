@@ -10,7 +10,6 @@ header {
 }
 
 h1 {
-  font-family: 'source_sans_probold', sans-serif;
   font-size: 48px;
 }
 
@@ -46,7 +45,6 @@ h1 {
 }
 
 .logo-text {
-  font-family: 'source_sans_probold', sans-serif;
   font-size: 30px;
 }
 
@@ -67,22 +65,17 @@ h1 {
 
   .fa-long-arrow-alt-down {
     font-size: 30px;
-    color: #000;
-  
   }
 }
 
 .btn {
+  @include common-styles-btn;
   padding: 20px 70px;
-  border: 2px solid black;
-  background-color: transparent;
-  text-transform: uppercase;
   margin: 45px 0 180px;
-  font-family: 'source_sans_probold', sans-serif;
   font-size: 22px;
 }
 
-/* FEATURES STYLES */
+/************************** FEATURES STYLES **************************/
 .features-items-row {
   display: flex;
   padding-bottom: 90px;
@@ -96,7 +89,6 @@ h1 {
   margin: 0 auto;
 
   h3 {
-    font-family: 'source_sans_probold', sans-serif;
     font-size: 22px;
     color: #000;
     text-transform: capitalize;
@@ -108,16 +100,462 @@ h1 {
   .fas, .far {
     margin-right: 25px;
     font-size: 50px;
-    color: #000;
   }
 }
 
 
-/* PRICING STYLES */
-.circle {
-  width: 320px;
-  height: 320px;
-  border:1px solid grey;
-  border-radius: 50%;
+/************************** PRICING STYLES **************************/
+.pricing-section{
+  padding-bottom: 50px;
 }
 
+.price-items-wrap {
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.price-item {
+  flex-basis: 270px;
+  text-align: center;
+  padding-bottom: 30px;
+  cursor: pointer;
+
+  &:hover {
+    .price-details .circle {
+      background-color: #000;
+      i {
+        color: #fff;
+      }
+    }
+  }
+
+  .price-details {
+    .circle {
+      @include circle;
+      background-color: #ebebeb;
+      font-size: 48px;
+      margin: 30px auto;
+    }
+
+    .title-price {
+      font-size: 24px;
+      padding-bottom: 30px;
+    }
+  }
+  
+  .price-type {
+    .title-price-type {
+      position: relative;
+      font-size: 32px;
+      text-transform: uppercase;
+      padding-top: 40px;
+
+      &::after {
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%) translateY(-50%);
+        content: "";
+        width: 30px;
+        height: 2px;  
+        background-color: #000;
+      }
+    }
+
+    .access-days {
+      padding-top: 10px;
+    }
+  }
+
+  .btn-price-wrap {
+    padding-top: 40px;
+    .btn-price {
+      @include common-styles-btn;
+      padding: 15px 35px;
+    }
+  }
+}
+
+/************************** PORTFOLIO STYLES **************************/
+.portfolio-section {
+  padding-bottom: 70px;
+}
+
+.portfolio-items {
+  text-align: center;
+  font-size: 16px;
+  h3 {
+    font-family: 'source_sans_probold', sans-serif;
+    font-size: 22px;
+    text-transform: capitalize;
+  }
+}
+
+.portfolio-items-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.portfolio-img {
+  position: relative;
+
+  .img-views,.today-date  {
+    color: red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+  }
+  
+  .img-views {
+    right: 160px;
+    .far {
+      padding-right: 5px;
+    }
+  }
+
+  .today-date {
+    left: 130px;
+    .far {
+      padding-left: 5px;
+    }
+  }
+
+  .far, span {
+    color: #fff;
+  }
+
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 98%;
+  top: 0;
+  left: 0;
+  background-color: rgba(34,34,34,.9);
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.portfolio-img:hover .overlay{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.resize-img-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+
+  i {
+    font-size: 30px;
+    color: #fff;
+  }
+}
+
+
+
+
+
+/************************** TEAM STYLES **************************/
+.team-section {
+  @extend .pricing-section;
+
+  .team-items-wrap {
+    @extend .price-items-wrap;
+    .team-item {
+      @extend .price-item;
+      @include figure-styles;
+
+      .circle {
+        @include circle;
+      }
+
+      .social-wrap {
+        padding-top: 15px;
+      }
+    }
+  }
+}
+
+
+/************************** STATS STYLES **************************/
+.stats-section {
+  padding-bottom: 80px;
+}
+
+.stats-items-wrap {
+  @extend .price-items-wrap;
+  padding-bottom: 80px;
+  .stats-item {
+    @extend .price-item;
+    text-align: center;
+    font-size: 14px;
+    .fas {
+      font-size: 48px;
+      padding-bottom: 25px;
+    }
+    span {
+      font-family: 'source_sans_probold', sans-serif;
+      font-size: 24px;
+      color: #000;
+    }
+  }
+}
+
+
+.client-wrap {
+  @include figure-styles;
+  .circle {
+    @include circle;
+  }
+
+  .client-feedback {
+    max-width: 625px;
+    text-align: center;
+    /* i {
+      color: #898989;
+    }
+    .fa-quote-left {
+      margin-right: 50px;
+    }
+    .fa-quote-right {
+      margin-left: 100px;
+    } */
+  }
+}
+
+blockquote {
+padding-top: 30px;
+
+  p {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  span {
+    position: relative;
+  }
+
+  span:before {
+    content: "\201C";
+    font-family: serif;
+    position: absolute;
+    font-size: 60px;
+    left: -50px;
+    top: 10px;
+    line-height: 0;
+  }
+
+  span:after {
+    content: "\201D";
+    font-family: serif;
+    position: absolute;
+    font-size: 60px;
+    right: -50px;
+    bottom: -10px;
+    line-height: 0;
+  }
+}
+
+
+/************************** FEEDBACK STYLES **************************/
+.feedback-wrap {
+  @extend .price-items-wrap;
+  justify-content: space-between;
+  margin-bottom: 45px;
+  .feedback-item {
+    max-width: 185px;
+    text-align: center;
+
+    a {
+      color: #000;
+      font-size: 16px;
+    }
+    .fas {
+      font-size: 22px;
+      padding-bottom: 25px;
+    }
+    span {
+      font-size: 24px;
+      font-weight: 600;
+      color: #000;
+    }
+  }
+}
+
+/* feedback form styles */
+  .feedback-form {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-input,
+  .form-textarea {
+    border:2px solid #000;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-submit-wrap {
+    text-align: center;
+  }
+
+  .form-submit {
+    @include common-styles-btn;
+    width: 180px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 70px;
+  }
+
+/************************** FOOTER STYLES **************************/
+.footer-section {
+  display: flex;
+  justify-content: center;
+  background-color: $color-bg-footer;
+  font-size: 16px;
+  h2 {
+    color: #fff;
+  }
+  
+  .footer-subscribe-form {
+    text-align: center;
+    padding-bottom: 100px;
+  }
+
+
+  .footer-form-input {
+    width: 60%;
+  }
+
+  .footer-form-submit {
+    @include common-styles-btn;
+    background-color: #fff;
+    padding: 19px 40px;
+  }
+}
+
+.footer-info-links {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding-bottom: 250px;
+  a {
+    color: #fff;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/************************** PORTFOLIO STYLES **************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
+}

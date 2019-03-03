@@ -1,0 +1,37 @@
+section.feedback-section
+  .container
+    .title
+      h2 Keep in touch with us
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+
+    .feedback-wrap
+      .feedback-item
+        i.fas.fa-map-marker-alt
+        adress        
+          p
+            span Adress
+            br
+            | 66, Dang Van ngu, Dong Da, Ha noi Vietnam
+
+      .feedback-item
+        i.fas.fa-envelope
+        div
+          span E-mail
+          br
+          a(href='mailto:someone@yoursite.com?subject=Mail from Our Site')  contact@halovietnam.com
+
+      .feedback-item
+        i.fas.fa-phone-square
+        div
+          span Phone
+          br
+          a(href='tel:1-562-867-5309') +844 1234 56789
+
+    .feedback-form-wrap
+      form.feedback-form(action='send.php', method='post')
+        input.form-input(type='text', name='email', placeholder='Email')
+        input.form-input(type='text', name='fio', placeholder='Full name')
+        textarea.form-textarea(rows='10', cols='5', name='Message', placeholder='Message')
+        .form-submit-wrap
+          input.form-input.form-submit(type='submit', value='Send Message')
