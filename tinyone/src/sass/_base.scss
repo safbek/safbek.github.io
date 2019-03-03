@@ -1,0 +1,65 @@
+// SourceSansBold
+@font-face {
+    font-family: 'source_sans_probold';
+    src: url('../fonts/SourceSansPro/SourceSansPro-Bold/sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('../fonts/SourceSansPro/SourceSansPro-Bold/sourcesanspro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// SourceSansRegular
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/SourceSansPro/SourceSansPro-Regular/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/SourceSansPro/SourceSansPro-Regular/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 100%;
+  color: #616161;
+  font-family: 'source_sans_proregular';
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container {
+ border:1px solid red;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 {
+  font-family: 'source_sans_probold', sans-serif;
+  font-size: 32px;
+  color: #000;
+  padding-bottom: 20px;
+}
+
+.title {
+  text-align: center;
+  padding: 70px 0;
+}
+
+

@@ -1,0 +1,123 @@
+@import "_base";
+@import "_mixins";
+@import "_variables";
+
+/************************** HEADER STYLES **************************/
+header {
+  background-color: $color-bg-header;
+  padding-bottom: 55px;
+  color: #000;
+}
+
+h1 {
+  font-family: 'source_sans_probold', sans-serif;
+  font-size: 48px;
+}
+
+.top-line {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+/*  menu */
+.menu {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* logo */
+.logo-wrap {
+  display: flex;
+  user-select: none;
+}
+
+.logo-icon{
+  padding-right: 10px;
+
+  img {
+    width: 40px;
+  }
+}
+
+.logo-text {
+  font-family: 'source_sans_probold', sans-serif;
+  font-size: 30px;
+}
+
+/* social icons */
+
+.fab {
+  padding-right: 20px;
+}
+
+/* section cover styles */
+
+.cover-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 250px;
+
+  .fa-long-arrow-alt-down {
+    font-size: 30px;
+    color: #000;
+  
+  }
+}
+
+.btn {
+  padding: 20px 70px;
+  border: 2px solid black;
+  background-color: transparent;
+  text-transform: uppercase;
+  margin: 45px 0 180px;
+  font-family: 'source_sans_probold', sans-serif;
+  font-size: 22px;
+}
+
+/* FEATURES STYLES */
+.features-items-row {
+  display: flex;
+  padding-bottom: 90px;
+}
+
+.feature-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-basis: 280px;
+  margin: 0 auto;
+
+  h3 {
+    font-family: 'source_sans_probold', sans-serif;
+    font-size: 22px;
+    color: #000;
+    text-transform: capitalize;
+    &.title-uppercase {
+      text-transform: uppercase;
+    }
+  }
+
+  .fas, .far {
+    margin-right: 25px;
+    font-size: 50px;
+    color: #000;
+  }
+}
+
+
+/* PRICING STYLES */
+.circle {
+  width: 320px;
+  height: 320px;
+  border:1px solid grey;
+  border-radius: 50%;
+}
+

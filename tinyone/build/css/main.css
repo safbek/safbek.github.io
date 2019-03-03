@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'source_sans_probold';
+  src: url("../fonts/SourceSansPro/SourceSansPro-Bold/sourcesanspro-bold-webfont.woff2") format("woff2"), url("../fonts/SourceSansPro/SourceSansPro-Bold/sourcesanspro-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'source_sans_proregular';
+  src: url("../fonts/SourceSansPro/SourceSansPro-Regular/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/SourceSansPro/SourceSansPro-Regular/sourcesanspro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 100%;
+  color: #616161;
+  font-family: 'source_sans_proregular'; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+.container {
+  border: 1px solid red;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+li {
+  list-style-type: none; }
+
+h2 {
+  font-family: 'source_sans_probold', sans-serif;
+  font-size: 32px;
+  color: #000;
+  padding-bottom: 20px; }
+
+.title {
+  text-align: center;
+  padding: 70px 0; }
+
+/************************** HEADER STYLES **************************/
+header {
+  background-color: #fcdb00;
+  padding-bottom: 55px;
+  color: #000; }
+
+h1 {
+  font-family: 'source_sans_probold', sans-serif;
+  font-size: 48px; }
+
+.top-line {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px; }
+
+/*  menu */
+.menu {
+  display: none; }
+
+.show {
+  display: block; }
+
+/* logo */
+.logo-wrap {
+  display: flex;
+  user-select: none; }
+
+.logo-icon {
+  padding-right: 10px; }
+  .logo-icon img {
+    width: 40px; }
+
+.logo-text {
+  font-family: 'source_sans_probold', sans-serif;
+  font-size: 30px; }
+
+/* social icons */
+.fab {
+  padding-right: 20px; }
+
+/* section cover styles */
+.cover-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 250px; }
+  .cover-section .fa-long-arrow-alt-down {
+    font-size: 30px;
+    color: #000; }
+
+.btn {
+  padding: 20px 70px;
+  border: 2px solid black;
+  background-color: transparent;
+  text-transform: uppercase;
+  margin: 45px 0 180px;
+  font-family: 'source_sans_probold', sans-serif;
+  font-size: 22px; }
+
+/* FEATURES STYLES */
+.features-items-row {
+  display: flex;
+  padding-bottom: 90px; }
+
+.feature-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-basis: 280px;
+  margin: 0 auto; }
+  .feature-item h3 {
+    font-family: 'source_sans_probold', sans-serif;
+    font-size: 22px;
+    color: #000;
+    text-transform: capitalize; }
+    .feature-item h3.title-uppercase {
+      text-transform: uppercase; }
+  .feature-item .fas, .feature-item .far {
+    margin-right: 25px;
+    font-size: 50px;
+    color: #000; }

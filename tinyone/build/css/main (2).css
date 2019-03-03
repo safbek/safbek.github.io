@@ -1,0 +1,210 @@
+@font-face {
+  font-family: 'reklame_script_demoregular';
+  src: url("../fonts/ReklameScript/reklamescript-regular_demo.woff2") format("woff2"), url("../fonts/ReklameScript/reklamescript-regular_demo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latolight';
+  src: url("../fonts/Lato/Lato-Light/lato-light-webfont.woff2") format("woff2"), url("../fonts/Lato/Lato-Light/lato-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoblack';
+  src: url("../fonts/Lato/Lato-Black/lato-black-webfont.woff2") format("woff2"), url("../fonts/Lato/Lato-Black/lato-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/Lato/Lato-Regular/lato-regular-webfont.woff2") format("woff2"), url("../fonts/Lato/Lato-Regular/lato-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 100%;
+  color: #616161; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+img {
+  max-width: 100%; }
+
+.container {
+  /* border:1px solid red; */
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.br-mobile, .mobile-nav {
+  display: none; }
+
+li {
+  list-style-type: none; }
+
+.description {
+  font-family: 'latolight', sans-serif;
+  font-size: 20px; }
+
+.logo-wrapper {
+  display: flex;
+  padding: 35px 0;
+  user-select: none; }
+
+.logo-icon {
+  padding-right: 5px; }
+  .logo-icon img {
+    width: 40px; }
+
+.logo-text {
+  font-family: 'reklame_script_demoregular', sans-serif;
+  font-size: 28px;
+  color: #fff; }
+
+.main-nav {
+  position: absolute;
+  padding-top: 20px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  background: #FFF;
+  opacity: 0;
+  z-index: -1;
+  visibility: hidden;
+  transition: all .375s; }
+  .main-nav.is-open {
+    opacity: 1;
+    z-index: 100;
+    visibility: visible; }
+  .main-nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -15px;
+    background: #ff6760;
+    transform-origin: 0 0;
+    transform: skew(-14deg) translateX(-120%);
+    transition: all .275s .1s; }
+  .main-nav.is-open::before {
+    transform: skew(-14deg) translateX(0); }
+  .main-nav ul {
+    display: inline-flex;
+    flex-direction: column;
+    height: 93%;
+    /* Should be 100%, but we have a notice message :D */
+    align-items: flex-end;
+    justify-content: center;
+    transform: translateX(-18%) skew(-16deg); }
+  .main-nav li {
+    display: block;
+    margin: .5rem 0;
+    text-align: right;
+    transform: skew(16deg); }
+  .main-nav a {
+    opacity: 0;
+    transform: translateY(-10px); }
+  .main-nav.is-open a {
+    opacity: 1;
+    transform: translateY(0); }
+  .main-nav li:nth-child(1) a {
+    transition: all 275ms 175ms; }
+  .main-nav li:nth-child(2) a {
+    transition: all 275ms 225ms; }
+  .main-nav li:nth-child(3) a {
+    transition: all 275ms 275ms; }
+  .main-nav li:nth-child(4) a {
+    transition: all 275ms 325ms; }
+  .main-nav li:nth-child(5) a {
+    transition: all 275ms 375ms; }
+  .main-nav ul, .main-nav li {
+    list-style: none;
+    padding: 0; }
+  .main-nav a {
+    display: block;
+    padding: 12px 0;
+    color: #fff;
+    font-size: 1.4em;
+    text-decoration: none;
+    font-weight: bold; }
+
+.open-main-nav {
+  position: absolute;
+  top: 54px;
+  right: 130px;
+  z-index: 1000;
+  background: none;
+  border: 0;
+  cursor: pointer; }
+  .open-main-nav:focus {
+    outline: none; }
+
+.burger {
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 0 auto;
+  background: #ff6760;
+  transform: skew(5deg);
+  transition: all .275s; }
+  .burger:after, .burger:before {
+    content: '';
+    display: block;
+    height: 100%;
+    background: #ff6760;
+    transition: all .275s; }
+  .burger:after {
+    transform: translateY(-12px) translateX(-2px) skew(-20deg); }
+  .burger:before {
+    transform: translateY(-16px) skew(-10deg); }
+
+/* Toggle State part */
+.is-open .burger {
+  transform: skew(5deg) translateY(-8px) rotate(-45deg);
+  background-color: #fff; }
+  .is-open .burger:before {
+    transform: translateY(0px) skew(-10deg) rotate(75deg);
+    background-color: #fff; }
+  .is-open .burger:after {
+    transform: translateY(-12px) translateX(10px) skew(-20deg);
+    opacity: 0; }
+
+/* MENU Text part */
+.burger-text {
+  display: block;
+  font-size: .675rem;
+  letter-spacing: .05em;
+  margin-top: .5em;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  color: #fff; }
+
+.device {
+  /* position: relative;
+  width: 600px;
+  height: 600px; */
+  background: transparent; }
+
+.container-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  /* background: linear-gradient(to bottom, #eee, #ddd); */ }
