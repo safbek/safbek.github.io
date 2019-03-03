@@ -71,8 +71,17 @@ h1 {
   padding-top: 60px; }
 
 /*  menu */
+.burger-icon {
+  cursor: pointer; }
+
 .menu {
-  display: none; }
+  display: none;
+  cursor: pointer; }
+  .menu a {
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 2;
+    font-family: 'source_sans_probold', sans-serif; }
 
 .show {
   display: block; }
@@ -140,10 +149,10 @@ h1 {
   padding-bottom: 50px; }
 
 .price-items-wrap, .team-section .team-items-wrap, .stats-items-wrap, .feedback-wrap {
-  max-width: 750px;
+  max-width: 800px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: stretch; }
 
 .price-item, .team-section .team-items-wrap .team-item, .stats-items-wrap .stats-item {
@@ -197,7 +206,7 @@ h1 {
 
 /************************** PORTFOLIO STYLES **************************/
 .portfolio-section {
-  padding-bottom: 70px; }
+  padding-bottom: 10px; }
 
 .portfolio-items {
   text-align: center;
@@ -209,7 +218,8 @@ h1 {
 
 .portfolio-items-row {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 60px; }
 
 .portfolio-item {
   display: flex;

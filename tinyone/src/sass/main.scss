@@ -22,8 +22,19 @@ h1 {
 }
 
 /*  menu */
+.burger-icon {
+  cursor: pointer;
+}
+
 .menu {
   display: none;
+  cursor: pointer;
+  a {
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 2;
+    font-family: 'source_sans_probold', sans-serif;
+  }
 }
 
 .show {
@@ -110,10 +121,10 @@ h1 {
 }
 
 .price-items-wrap {
-  max-width: 750px;
+  max-width: 800px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: stretch;
 }
 
@@ -182,7 +193,7 @@ h1 {
 
 /************************** PORTFOLIO STYLES **************************/
 .portfolio-section {
-  padding-bottom: 70px;
+  padding-bottom: 10px;
 }
 
 .portfolio-items {
@@ -198,6 +209,7 @@ h1 {
 .portfolio-items-row {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 60px;
 }
 
 .portfolio-item {
