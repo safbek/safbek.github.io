@@ -63,6 +63,7 @@ h1 {
 
 .fab {
   padding-right: 20px;
+  cursor: pointer;
 }
 
 /* section cover styles */
@@ -89,7 +90,8 @@ h1 {
 /************************** FEATURES STYLES **************************/
 .features-items-row {
   display: flex;
-  padding-bottom: 90px;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
 }
 
 .feature-item {
@@ -98,6 +100,7 @@ h1 {
   align-items: flex-start;
   flex-basis: 280px;
   margin: 0 auto;
+  padding-bottom: 90px;
 
   h3 {
     font-size: 22px;
@@ -350,8 +353,8 @@ h1 {
   }
 }
 
-blockquote {
-padding-top: 30px;
+.stats-blockquote {
+  padding-top: 30px;
 
   p {
     font-size: 20px;
@@ -473,101 +476,6 @@ padding-top: 30px;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/************************** PORTFOLIO STYLES **************************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1300px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1500px;
-  }
-}
+/* .container {
+  border:1px solid red;
+} */

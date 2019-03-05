@@ -101,7 +101,8 @@ h1 {
 
 /* social icons */
 .fab {
-  padding-right: 20px; }
+  padding-right: 20px;
+  cursor: pointer; }
 
 /* section cover styles */
 .cover-section {
@@ -126,14 +127,16 @@ h1 {
 /************************** FEATURES STYLES **************************/
 .features-items-row {
   display: flex;
-  padding-bottom: 90px; }
+  flex-wrap: wrap;
+  padding-bottom: 70px; }
 
 .feature-item {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-basis: 280px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 90px; }
   .feature-item h3 {
     font-size: 22px;
     color: #000;
@@ -347,14 +350,14 @@ h1 {
       margin-left: 100px;
     } */ }
 
-blockquote {
+.stats-blockquote {
   padding-top: 30px; }
-  blockquote p {
+  .stats-blockquote p {
     font-size: 20px;
     line-height: 1.25; }
-  blockquote span {
+  .stats-blockquote span {
     position: relative; }
-  blockquote span:before {
+  .stats-blockquote span:before {
     content: "\201C";
     font-family: serif;
     position: absolute;
@@ -362,7 +365,7 @@ blockquote {
     left: -50px;
     top: 10px;
     line-height: 0; }
-  blockquote span:after {
+  .stats-blockquote span:after {
     content: "\201D";
     font-family: serif;
     position: absolute;
@@ -446,27 +449,6 @@ blockquote {
   .footer-info-links a {
     color: #fff; }
 
-/************************** PORTFOLIO STYLES **************************/
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px; } }
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px; } }
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px; } }
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px; } }
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1300px; } }
-
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1500px; } }
+/* .container {
+  border:1px solid red;
+} */
