@@ -74,7 +74,7 @@
   }
 
   /* HEADER STYLES */
-  .cover-section {
+  .header-section {
     padding-top: 150px;
   }
 
@@ -83,35 +83,50 @@
   }
   
   /* FEATURES STYLES */
-  .features-items-row {
+  .features-row {
     flex-wrap: wrap;
   }
 
-  .feature-item {
+  .feature {
     padding-bottom: 60px;
   }
 
   /* PRICING STYLES */
-  .price-items-wrap {
+  .tarrifs {
     flex-wrap: wrap;
   }
 
-  .price-item {
+  .price__item {
     flex-basis: 100%;
     margin-bottom: 60px;
   }
 
   /* PORTFOLIO STYLES */
-  .portfolio-items-row {
+  .portfolio-row {
     flex-wrap: wrap;
-    width: 80%;
+    width: 95%;
+    justify-content: space-around;
     margin: 0 auto;
+  }
+  
+   /* TARRIFS STYLES */
+  .tarrifs {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .tarrif {
+    padding-top: 30px;
   }
 
   
   /* TEAM STYLES */
   .team-items-wrap {
     flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-around;
   }
 
   /* STATS STYLES */
@@ -132,21 +147,26 @@
     background-color: green;
   }
 
-  .social-icon-wrap {
+  .social-icons {
     display: none;
   }
     
   /* FEATURE STYLES */
-  .feature-item {
+  .feature {
     flex-basis: 100%;
   }
 
+  /* PRICING STYLES */
+  .price__item {
+    background-color: rgba(0,0,0, .3);
+  }
+
   /* PORTFOLIO STYLES */
-  .portfolio-items-row,
+  .portfolio-row,
   .team-section .team-items-wrap {
     justify-content: center;
   }
-  .portfolio-items-row {
+  .portfolio-row {
     padding-bottom: 0;
   }
 
@@ -163,11 +183,11 @@
 
     /*COMMON STYLES*/
     .title {
-      padding-top: 10px;
+      padding-top: 40px;
     }
 
     h2 {
-      font-size: 25px;
+      font-size: 32px;
     }
 
     h3 {
@@ -175,9 +195,9 @@
     }
 
 
-    HEADER STYLES
-    h1 {
-      font-size: 35px;
+    /* HEADER STYLES */
+    .header__title {
+      font-size: 42px;
     }
 
     .top-line {
@@ -185,7 +205,7 @@
       padding-top: 25px;
     }
 
-    .cover-section {
+    .header-section {
       padding-top: 80px;
       padding-bottom: 0px;
     }
@@ -197,9 +217,18 @@
     }
 
     /* FEATURE STYLES */
-    .feature-item .fas,
-    .feature-item .far {
+    .feature .fas,
+    .feature .far {
       font-size: 45px;
+    }
+
+    .feature {
+      padding-bottom: 30px;
+    }
+
+    /* TARRIFS STYLES */
+    .tarrif {
+      padding-bottom: 0px;
     }
 
     /*FEEDBACK STYLES*/

@@ -2,7 +2,7 @@ header
   .container
     section.top-line
       nav
-        .burger-icon#trigger
+        .burger-icon#toogler
           svg#svg8(xmlns='http://www.w3.org/2000/svg', xmlns:cc='http://creativecommons.org/ns#', xmlns:dc='http://purl.org/dc/elements/1.1/', xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#', xmlns:svg='http://www.w3.org/2000/svg', height='48', version='1.1', viewBox='0 0 12.7 12.7', width='48')
             g#layer1(transform='translate(0,-284.29998)')
               path#rect4487(d='m 2.8222223,287.1222 v 1.41111 h 7.0555558 v -1.41111 z m 0,2.82222 v 1.41112 h 7.0555558 v -1.41112 z m 0,2.82223 v 1.41111 h 7.0555558 v -1.41111 z', style='opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07055555;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1')
@@ -21,28 +21,24 @@ header
           li
             a(href='#') contact
 
-      .logo-wrap
-        .logo-icon
+      .logo
+        .logo__icon
           img(src='img/logo.png', alt='logo')
-        .logo-text tinyone
-      .social-icon-wrap
+        .logo__text tinyone
+      .social-icons
         a(href="#")
-          i.fab.fa-facebook-f
+          i.fab.fa-facebook-f.social-icon
         a(href="#")
-          i.fab.fa-twitter
+          i.fab.fa-twitter.social-icon
         a(href="#")
-          i.fab.fa-google-plus-g
+          i.fab.fa-google-plus-g.social-icon
         a(href="#")
-          i.fab.fa-pinterest
+          i.fab.fa-pinterest.social-icon
 
-    section.cover-section
-      .cover-wrap
-        h1 Inspire your inspiration
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.
-        .btn-wrap
-          button.btn get started
-        .scroll-wrap
-          i.fas.fa-long-arrow-alt-down
+    section.header-section
+      h1.header__title Inspire your inspiration
+      p.header__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.
+      .btn-wrap
+        button.btn get started
+      .scroll-icon
+        i.fas.fa-long-arrow-alt-down.scroll-icon__down

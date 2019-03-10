@@ -9,8 +9,14 @@ header {
   color: #000;
 }
 
-h1 {
+.header__title {
   font-size: 48px;
+}
+
+.header__description {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .top-line {
@@ -42,12 +48,12 @@ h1 {
 }
 
 /* logo */
-.logo-wrap {
+.logo {
   display: flex;
   user-select: none;
 }
 
-.logo-icon{
+.logo__icon{
   padding-right: 10px;
 
   img {
@@ -55,27 +61,24 @@ h1 {
   }
 }
 
-.logo-text {
+.logo__text {
   font-size: 30px;
 }
 
 /* social icons */
 
-.fab {
+.social-icon {
   padding-right: 20px;
   cursor: pointer;
 }
 
 /* section cover styles */
 
-.cover-section {
-  display: flex;
-  justify-content: center;
+.header-section {
   text-align: center;
-  align-items: center;
   padding-top: 250px;
 
-  .fa-long-arrow-alt-down {
+  .scroll-icon__down {
     font-size: 30px;
   }
 }
@@ -88,21 +91,20 @@ h1 {
 }
 
 /************************** FEATURES STYLES **************************/
-.features-items-row {
+.features-row {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 70px;
 }
 
-.feature-item {
+.feature {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-basis: 280px;
   margin: 0 auto;
-  padding-bottom: 90px;
+  padding-bottom: 65px;
 
-  h3 {
+  .feature__title {
     font-size: 22px;
     color: #000;
     text-transform: capitalize;
@@ -120,10 +122,10 @@ h1 {
 
 /************************** PRICING STYLES **************************/
 .pricing-section{
-  padding-bottom: 50px;
+  padding-bottom: 35px;
 }
 
-.price-items-wrap {
+.tarrifs {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
@@ -131,88 +133,76 @@ h1 {
   align-items: stretch;
 }
 
-.price-item {
+.tarrif {
   flex-basis: 270px;
   text-align: center;
   padding-bottom: 30px;
   cursor: pointer;
+}
 
+.tarrif__icon {
+  @include circle;
+  background-color: #ebebeb;
+  font-size: 48px;
+  margin: 0 auto;
   &:hover {
-    .price-details .circle {
-      background-color: #000;
-      i {
-        color: #fff;
-      }
+    background-color: #000;
+    i {
+          color: #fff;
     }
   }
+}
 
-  .price-details {
-    .circle {
-      @include circle;
-      background-color: #ebebeb;
-      font-size: 48px;
-      margin: 30px auto;
-    }
-
-    .title-price {
-      font-size: 24px;
-      padding-bottom: 30px;
-    }
-  }
+.tarrif__title {
+  font-size: 24px;
+  padding: 30px 0;
+}
   
-  .price-type {
-    .title-price-type {
-      position: relative;
-      font-size: 32px;
-      text-transform: uppercase;
-      padding-top: 40px;
+.tarrif__price {
+  position: relative;
+  font-size: 32px;
+  text-transform: uppercase;
+  padding-top: 40px;
 
-      &::after {
-        display: block;
-        position: absolute;
-        left: 50%;
-        bottom: -5px;
-        transform: translateX(-50%) translateY(-50%);
-        content: "";
-        width: 30px;
-        height: 2px;  
-        background-color: #000;
-      }
-    }
-
-    .access-days {
-      padding-top: 10px;
-    }
+  &::after {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%) translateY(-50%);
+    content: "";
+    width: 30px;
+    height: 2px;  
+    background-color: #000;
   }
+}
 
-  .btn-price-wrap {
-    padding-top: 40px;
-    .btn-price {
-      @include common-styles-btn;
-      padding: 15px 35px;
-    }
-  }
+.tarrif__term {
+  padding-top: 10px;
+}
+.tarrif__button {
+  @include common-styles-btn;
+  padding: 15px 35px;
+  margin-top: 40px;
 }
 
 /************************** PORTFOLIO STYLES **************************/
 .portfolio-section {
   padding-bottom: 10px;
-}
-
-.portfolio-items {
-  text-align: center;
   font-size: 16px;
-  h3 {
-    font-family: 'source_sans_probold', sans-serif;
-    font-size: 22px;
-    text-transform: capitalize;
-  }
 }
 
-.portfolio-items-row {
+.portfolio-item__title {
+  font-family: 'source_sans_probold', sans-serif;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.portfolio-row {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 60px;
+  text-align: center;
+  padding-bottom: 65px;
 }
 
 .portfolio-item {
@@ -221,10 +211,9 @@ h1 {
   flex-direction: column;
 }
 
-.portfolio-img {
+.portfolio-item__info {
   position: relative;
-
-  .img-views,.today-date  {
+  .portfolio-item__views,.today__date  {
     color: red;
     position: absolute;
     left: 0;
@@ -232,14 +221,14 @@ h1 {
     bottom: 10px;
   }
   
-  .img-views {
+  .portfolio-item__views {
     right: 160px;
     .far {
       padding-right: 5px;
     }
   }
 
-  .today-date {
+  .today__date {
     left: 130px;
     .far {
       padding-left: 5px;
@@ -249,10 +238,9 @@ h1 {
   .far, span {
     color: #fff;
   }
-
 }
 
-.overlay {
+.portfolio-item__overlay {
   position: absolute;
   width: 100%;
   height: 98%;
@@ -263,7 +251,7 @@ h1 {
   transition: opacity .3s;
 }
 
-.portfolio-img:hover .overlay{
+.portfolio-item__info:hover .portfolio-item__overlay {
   opacity: 1;
   cursor: pointer;
 }
@@ -281,18 +269,13 @@ h1 {
   }
 }
 
-
-
-
-
 /************************** TEAM STYLES **************************/
 .team-section {
-  @extend .pricing-section;
-
+  padding-bottom: 50px;
   .team-items-wrap {
-    @extend .price-items-wrap;
+    @extend .tarrifs;
     .team-item {
-      @extend .price-item;
+      @extend .tarrif;
       @include figure-styles;
 
       .circle {
@@ -313,10 +296,10 @@ h1 {
 }
 
 .stats-items-wrap {
-  @extend .price-items-wrap;
+  @extend .tarrifs;
   padding-bottom: 80px;
   .stats-item {
-    @extend .price-item;
+    @extend .tarrif;
     text-align: center;
     font-size: 14px;
     .fas {
@@ -389,7 +372,7 @@ h1 {
 
 /************************** FEEDBACK STYLES **************************/
 .feedback-wrap {
-  @extend .price-items-wrap;
+  @extend .tarrifs;
   justify-content: space-between;
   margin-bottom: 45px;
   .feedback-item {
@@ -479,3 +462,4 @@ h1 {
 /* .container {
   border:1px solid red;
 } */
+
