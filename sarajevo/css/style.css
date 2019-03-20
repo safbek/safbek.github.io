@@ -124,7 +124,8 @@ h2{
 
 .header_wrapper{
 	display: flex;
-	padding-top: 30px;
+	-ms-align-items: center;
+	align-items: center;
 	background-color: rgba(16,22,54,.2);
 	height: 56px;
 	max-width: 970px;
@@ -617,6 +618,7 @@ footer {
 	height: 45px;
 	background-color: transparent;
 	border: 1px solid #fff;
+	color: #fff;
 }
 
 .button_subscribe {
@@ -632,7 +634,6 @@ footer {
 .fa-long-arrow-alt-right {
 	font-size: 25px;
 }
-
 
 /*Mobile Menu Styles*/
 .mobile_wrapper{
@@ -656,8 +657,6 @@ footer {
 	text-transform: uppercase;
 	font-family:'Conv_Lato-Thin',Sans-Serif;
 	font-size: 14px;
-
-
 }
 
 /* Dropdown button on hover & focus */
