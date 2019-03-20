@@ -94,6 +94,8 @@ header {
 .features-row {
   display: flex;
   flex-wrap: wrap;
+  max-width: 950px;
+  margin: 0 auto;
 }
 
 .feature {
@@ -145,12 +147,6 @@ header {
   background-color: #ebebeb;
   font-size: 48px;
   margin: 0 auto;
-  &:hover {
-    background-color: #000;
-    i {
-          color: #fff;
-    }
-  }
 }
 
 .tarrif__title {
@@ -184,6 +180,10 @@ header {
   @include common-styles-btn;
   padding: 15px 35px;
   margin-top: 40px;
+}
+
+.tarrif__button:hover {
+  transform:scale(1.1);
 }
 
 /************************** PORTFOLIO STYLES **************************/
@@ -272,9 +272,9 @@ header {
 /************************** TEAM STYLES **************************/
 .team-section {
   padding-bottom: 50px;
-  .team-items-wrap {
+  .teams {
     @extend .tarrifs;
-    .team-item {
+    .team {
       @extend .tarrif;
       @include figure-styles;
 
@@ -282,8 +282,12 @@ header {
         @include circle;
       }
 
-      .social-wrap {
+      .team__social__icons {
         padding-top: 15px;
+      }
+
+      .team__social__icon {
+        padding-right: 15px;
       }
     }
   }
@@ -295,7 +299,7 @@ header {
   padding-bottom: 80px;
 }
 
-.stats-items-wrap {
+.stats-items {
   @extend .tarrifs;
   padding-bottom: 80px;
   .stats-item {
@@ -371,7 +375,7 @@ header {
 
 
 /************************** FEEDBACK STYLES **************************/
-.feedback-wrap {
+.feedback {
   @extend .tarrifs;
   justify-content: space-between;
   margin-bottom: 45px;
@@ -423,13 +427,17 @@ header {
   }
 
 /************************** FOOTER STYLES **************************/
-.footer-section {
+.footer {
   display: flex;
   justify-content: center;
   background-color: $color-bg-footer;
   font-size: 16px;
   h2 {
     color: #fff;
+  }
+
+  .item-link ul li {
+    line-height: 1.7;
   }
   
   .footer-subscribe-form {
@@ -440,6 +448,7 @@ header {
 
   .footer-form-input {
     width: 60%;
+    min-width: 350px;
   }
 
   .footer-form-submit {

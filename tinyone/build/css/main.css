@@ -54,6 +54,9 @@ h2 {
   padding-top: 85px;
   padding-bottom: 70px; }
 
+.form-submit, .footer-form-submit {
+  -webkit-appearance: none; }
+
 /************************** HEADER STYLES **************************/
 header {
   background-color: #fcdb00;
@@ -129,7 +132,9 @@ header {
 /************************** FEATURES STYLES **************************/
 .features-row {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  max-width: 950px;
+  margin: 0 auto; }
 
 .feature {
   display: flex;
@@ -152,14 +157,14 @@ header {
 .pricing-section {
   padding-bottom: 35px; }
 
-.tarrifs, .team-section .team-items-wrap, .stats-items-wrap, .feedback-wrap {
+.tarrifs, .team-section .teams, .stats-items, .feedback {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: stretch; }
 
-.tarrif, .team-section .team-items-wrap .team-item, .stats-items-wrap .stats-item {
+.tarrif, .team-section .teams .team, .stats-items .stats-item {
   flex-basis: 270px;
   text-align: center;
   padding-bottom: 30px;
@@ -175,10 +180,6 @@ header {
   background-color: #ebebeb;
   font-size: 48px;
   margin: 0 auto; }
-  .tarrif__icon:hover {
-    background-color: #000; }
-    .tarrif__icon:hover i {
-      color: #fff; }
 
 .tarrif__title {
   font-size: 24px;
@@ -211,6 +212,9 @@ header {
   cursor: pointer;
   padding: 15px 35px;
   margin-top: 40px; }
+
+.tarrif__button:hover {
+  transform: scale(1.1); }
 
 /************************** PORTFOLIO STYLES **************************/
 .portfolio-section {
@@ -279,42 +283,44 @@ header {
 /************************** TEAM STYLES **************************/
 .team-section {
   padding-bottom: 50px; }
-  .team-section .team-items-wrap .team-item figure {
+  .team-section .teams .team figure {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .team-section .team-items-wrap .team-item figure figcaption {
+    .team-section .teams .team figure figcaption {
       font-size: 16px; }
-      .team-section .team-items-wrap .team-item figure figcaption .name {
+      .team-section .teams .team figure figcaption .name {
         font-size: 22px;
         font-weight: 700;
         color: #000;
         padding-top: 40px; }
-      .team-section .team-items-wrap .team-item figure figcaption .profession-type {
+      .team-section .teams .team figure figcaption .profession-type {
         padding: 5px 0 15px; }
-  .team-section .team-items-wrap .team-item .circle {
+  .team-section .teams .team .circle {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center; }
-  .team-section .team-items-wrap .team-item .social-wrap {
+  .team-section .teams .team .team__social__icons {
     padding-top: 15px; }
+  .team-section .teams .team .team__social__icon {
+    padding-right: 15px; }
 
 /************************** STATS STYLES **************************/
 .stats-section {
   padding-bottom: 80px; }
 
-.stats-items-wrap {
+.stats-items {
   padding-bottom: 80px; }
-  .stats-items-wrap .stats-item {
+  .stats-items .stats-item {
     text-align: center;
     font-size: 14px; }
-    .stats-items-wrap .stats-item .fas {
+    .stats-items .stats-item .fas {
       font-size: 48px;
       padding-bottom: 25px; }
-    .stats-items-wrap .stats-item span {
+    .stats-items .stats-item span {
       font-family: 'source_sans_probold', sans-serif;
       font-size: 24px;
       color: #000; }
@@ -379,19 +385,19 @@ header {
     line-height: 0; }
 
 /************************** FEEDBACK STYLES **************************/
-.feedback-wrap {
+.feedback {
   justify-content: space-between;
   margin-bottom: 45px; }
-  .feedback-wrap .feedback-item {
+  .feedback .feedback-item {
     max-width: 185px;
     text-align: center; }
-    .feedback-wrap .feedback-item a {
+    .feedback .feedback-item a {
       color: #000;
       font-size: 16px; }
-    .feedback-wrap .feedback-item .fas {
+    .feedback .feedback-item .fas {
       font-size: 22px;
       padding-bottom: 25px; }
-    .feedback-wrap .feedback-item span {
+    .feedback .feedback-item span {
       font-size: 24px;
       font-weight: 600;
       color: #000; }
@@ -424,19 +430,22 @@ header {
   margin-bottom: 70px; }
 
 /************************** FOOTER STYLES **************************/
-.footer-section {
+.footer {
   display: flex;
   justify-content: center;
   background-color: #010101;
   font-size: 16px; }
-  .footer-section h2 {
+  .footer h2 {
     color: #fff; }
-  .footer-section .footer-subscribe-form {
+  .footer .item-link ul li {
+    line-height: 1.7; }
+  .footer .footer-subscribe-form {
     text-align: center;
     padding-bottom: 100px; }
-  .footer-section .footer-form-input {
-    width: 60%; }
-  .footer-section .footer-form-submit {
+  .footer .footer-form-input {
+    width: 60%;
+    min-width: 350px; }
+  .footer .footer-form-submit {
     border: 2px solid black;
     background-color: transparent;
     text-transform: uppercase;

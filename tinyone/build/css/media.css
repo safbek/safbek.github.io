@@ -78,12 +78,12 @@
   .tarrif {
     padding-top: 30px; }
   /* TEAM STYLES */
-  .team-items-wrap {
+  .teams {
     flex-wrap: wrap;
     width: 95%;
     justify-content: space-around; }
   /* STATS STYLES */
-  .stats-items-wrap {
+  .stats-items {
     padding-bottom: 30px; }
   /* FOOTER STYLES */
   .footer-info-links {
@@ -103,7 +103,7 @@
     background-color: rgba(0, 0, 0, 0.3); }
   /* PORTFOLIO STYLES */
   .portfolio-row,
-  .team-section .team-items-wrap {
+  .team-section .teams {
     justify-content: center; }
   .portfolio-row {
     padding-bottom: 0; }
@@ -144,18 +144,18 @@
   .tarrif {
     padding-bottom: 0px; }
   /*FEEDBACK STYLES*/
-  .feedback-wrap {
+  .feedback {
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: space-around; }
   .feedback-item {
-    flex-basis: 80%;
+    flex-basis: 100%;
     padding-bottom: 30px; }
   .feedback-form {
     width: 70%; }
   .form-input, .form-textarea {
     padding: 15px; }
   /*FOOTER STYLES*/
-  .footer-section .footer-subscribe-form {
+  .footer .footer-subscribe-form {
     padding-bottom: 30px; }
   .footer-info-links {
     flex-wrap: wrap;
@@ -171,12 +171,22 @@
     max-width: 380px; }
   .stats-blockquote span:before,
   span:after {
-    display: none; } }
+    display: none; }
+  /* Footer */
+  .footer .footer-form-input {
+    min-width: 330px; }
+  .footer .footer-form-submit {
+    padding: 15px 40px; } }
 
 /* ==============================   360 ================================= */
 @media (max-width: 359.98px) {
   body {
-    background-color: gold; } }
+    background-color: gold; }
+  /* Footer */
+  .footer .footer-form-input {
+    min-width: 285px; }
+  .footer .footer-form-submit {
+    padding: 10px 40px; } }
 
 body {
   background-color: #fff; }
