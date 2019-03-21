@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'reklame_script_demoregular';
+  src: url("../fonts/ReklameScript/reklamescript-regular_demo.woff2") format("woff2"), url("../fonts/ReklameScript/reklamescript-regular_demo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latolight';
+  src: url("../fonts/Lato/Lato-Light/lato-light-webfont.woff2") format("woff2"), url("../fonts/Lato/Lato-Light/lato-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoblack';
+  src: url("../fonts/Lato/Lato-Black/lato-black-webfont.woff2") format("woff2"), url("../fonts/Lato/Lato-Black/lato-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'latoregular';
+  src: url("../fonts/Lato/Lato-Regular/lato-regular-webfont.woff2") format("woff2"), url("../fonts/Lato/Lato-Regular/lato-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 100%;
+  color: #616161; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+img {
+  max-width: 100%; }
+
+.container {
+  /* border:1px solid red; */
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.br-mobile, .mobile-nav {
+  display: none; }
+
+li {
+  list-style-type: none; }
+
+.description {
+  font-family: 'latolight', sans-serif;
+  font-size: 20px; }
+
+/*HEADER STYLES*/
+header {
+  background-color: #262626; }
+
+.header-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header-wrapper li {
+    padding: 12px 18px; }
+    .header-wrapper li:hover {
+      border-radius: 3px;
+      background-color: #ff6760; }
+
+.logo-wrapper {
+  display: flex;
+  padding: 35px 0;
+  user-select: none; }
+
+.logo-icon {
+  padding-right: 5px; }
+  .logo-icon img {
+    width: 40px; }
+
+.logo-text {
+  font-family: 'reklame_script_demoregular', sans-serif;
+  font-size: 28px;
+  color: #fff; }

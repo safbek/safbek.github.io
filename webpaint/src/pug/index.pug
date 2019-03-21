@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset="UTF-8")
+        title Webpaint
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.5.0/css/all.css', integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU', crossorigin='anonymous')
+        link(rel="stylesheet", href="css/main.css")
+        link(rel="stylesheet", href="css/media.css")
+        link(rel="stylesheet", href="libs/slick-lib/slick/slick.css")
+        link(rel="stylesheet", href="libs/slick-lib/slick/slick-theme.css")
+    body
+        include _partials/header
+        include _partials/slider
+        include _partials/services
+        include _partials/portfolio
+        include _partials/contacts
+        include _partials/footer
+
+        script(type="text/javascript", src="//code.jquery.com/jquery-1.11.0.min.js")
+        script(type="text/javascript", src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+        script(type="text/javascript", src="libs/slick-lib/slick/slick.min.js")
+
+        script(type='text/javascript').
+          $('.slider-items').slick({
+          autoplay: true,
+          autoplaySpeed: 3000,
+          });
+
+        script.
+          let burger = document.getElementById('burger'),
+          nav    = document.getElementById('main-nav');
+          burger.addEventListener('click', function(e){
+          this.classList.toggle('is-open');
+          nav.classList.toggle('is-open');
+          });

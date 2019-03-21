@@ -1,0 +1,44 @@
+@import "_base";
+@import "_mixins";
+@import "_variables";
+
+/*HEADER STYLES*/
+header {
+  background-color: $color-bg-header;
+}
+
+.header-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  li {
+    padding: 12px 18px;
+    &:hover {
+      border-radius: 3px;
+      background-color: $color-accent;
+    }
+  }
+}
+
+.logo-wrapper {
+  display: flex;
+  padding: 35px 0;
+  user-select: none;
+}
+
+.logo-icon{
+  padding-right: 5px;
+
+  img {
+    width: 40px;
+  }
+}
+
+.logo-text {
+  font-family: 'reklame_script_demoregular', sans-serif;
+  font-size: 28px;
+  color: #fff;
+}

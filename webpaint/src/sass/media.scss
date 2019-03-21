@@ -1,0 +1,128 @@
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+/* ==============================   1920 ================================= */
+@media (max-width: 1920px) {
+   /* body{
+      background-color: black;
+      } */
+}
+
+/* ==============================   1520 ================================= */
+@media (max-width: 1520px) {
+  body{
+     background-color: blue;
+  }
+
+}
+
+
+/* ==============================   1366 ================================= */
+@media (max-width: 1366px) {
+  body{
+    background-color: pink;
+  }
+}
+
+/* ==============================   1200 ================================= */
+@media (max-width: 1199.98px) {
+  body{
+    background-color: yellow;
+  }
+
+  .header-nav {
+    width: 75%;
+    justify-content: center;
+
+    ul {
+      font-size: 10px;
+    }
+
+    li {
+      padding: 10px 16px;
+    }
+  }
+}
+
+/* ==============================   992 ================================= */
+@media (max-width: 991.98px) {
+  body{
+    background-color: grey;
+  } 
+
+}
+
+/* ==============================   767 ================================= */
+@media (max-width: 767.98px) {
+    body{
+      background-color: green;
+    }
+
+    .desktop-nav {
+      display: none;
+    }
+
+    .mobile-nav {
+      display: block;
+    }
+
+    .header-wrapper-mobile { 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+}
+
+/* ==============================   576 ================================= */
+  @media (max-width: 575.98px) {
+    body{
+      background-color: violet;
+    }
+
+}
+
+/* ==============================   360 ================================= */
+  @media (max-width: 359.98px) {
+    body{
+      background-color: gold;
+    }
+  }
+
+ body{
+  background-color: #fff;
+  } 
