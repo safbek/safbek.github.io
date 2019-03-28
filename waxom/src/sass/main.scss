@@ -235,13 +235,16 @@
 		padding-top: 30px;
 		padding-bottom: 20px;
 	}
-
-	&:hover .feature__title {
-		color: $color-accent;;
-	}
 	&__icon {
-		width: 42px;
-		height: 39px;
+		font-size: 40px;
+		color: #000;
+	}
+
+	&:hover .feature__title,
+	&:hover .feature__icon {
+		color: $color-accent;
+		transform: scale(1.1);
+		transition-duration: 1s;
 	}
  }
 
@@ -332,20 +335,29 @@
   padding: 10px 15px;
   border: none;
   border-radius: 3px;
-  font-weight: bold;
   cursor: pointer;
+  font-family: "Montserrat-Light", sans-serif;
+  font-size: 14px;
+  color: #8c8c8c;
+  outline: none;
+  &:hover {
+  	color: #fff;
+  	background-color: $color-accent;
+  }
+  &:focus {
+  	background-color: $color-accent;
+  	color: #fff;
+  }
 }
 
 .work-type + .work-type {
     margin-left: 20px;
 }
 
-.work-type:hover {
-    background-color: $color-accent;
-}
-
 .work-type_active {
     background-color: $color-accent;
+    color: #fff;
+    outline: none;
 }
 
 .portfolio__title {
@@ -400,7 +412,7 @@
 }
 
 .portfolio-item__figcaption {
-	margin-top: -4px;
+	margin-top: -5px;
 	padding: 30px;
 }
 
@@ -409,7 +421,7 @@
   content: '';
   position: absolute;
   left: 24px;
-  bottom: 112px;
+  bottom: 111px;
   width: 0;
   height: 0;
   border-left: 14px solid transparent;
@@ -419,10 +431,10 @@
 
 .portfolio-item:hover {
 	.portfolio-item__figcaption {
-		background-color: #362f2d;
+		background-color: rgba(54,47,45,.9);
 		transition-duration: .2s;
 	}
-	.portfolio-item__figcaption::before{
+	.portfolio-item__figcaption::before {
 		border-bottom: 11px solid #362f2d;
 		transition-duration: .2s;
 	}
@@ -451,7 +463,7 @@
     align-items: center;
     opacity: 0;
     width: 100%;
-    height: 68%;
+    height: 100%;
     background-color: rgba(0, 0, 0, .3);
     transition: opacity .2s ease-in;
     .link {
@@ -460,21 +472,21 @@
 }
 
 .portfolio-item:hover .portfolio-item__overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 .portfolio-item__content {
-    color: #fff;
-    text-align: center;
+  color: #fff;
+  text-align: center;
 }
 
 .portfolio-item__icon {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .portfolio-item__description {
-    margin-top: 5px;
-    font-size: 20px;
+  margin-top: 5px;
+  font-size: 20px;
 }
 
 .portfolio-btn-wrap {
@@ -834,6 +846,12 @@
 	}
 }
 
+.copyright__logo {
+	color: #fff;
+}
+
+
+/*MOBILE MENU*/
 .mobile-menu {
 	display: flex;
 	align-items: center;
@@ -855,11 +873,6 @@
 		justify-content: flex-end;
 		flex: 1;
 	}
-
- /* .mobile__search {
- 	position: relative;
- 	width: 80px;
- } */
 
 /*  menu */
 .burger-icon {
@@ -884,3 +897,7 @@
 .mobile-nav{
   display: none;
 }
+
+
+
+

@@ -79,7 +79,7 @@ img {
   margin-left: auto;
   outline: none; }
 
-.mobile-nav {
+.mobile-nav, .mobile__br {
   display: none; }
 
 li {
@@ -289,11 +289,14 @@ li {
     text-transform: capitalize;
     padding-top: 30px;
     padding-bottom: 20px; }
-  .feature:hover .feature__title {
-    color: #998672; }
   .feature__icon {
-    width: 42px;
-    height: 39px; }
+    font-size: 40px;
+    color: #000; }
+  .feature:hover .feature__title,
+  .feature:hover .feature__icon {
+    color: #998672;
+    transform: scale(1.1);
+    transition-duration: 1s; }
 
 .feature-two {
   text-align: center; }
@@ -365,17 +368,25 @@ li {
   padding: 10px 15px;
   border: none;
   border-radius: 3px;
-  font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: "Montserrat-Light", sans-serif;
+  font-size: 14px;
+  color: #8c8c8c;
+  outline: none; }
+  .work-type:hover {
+    color: #fff;
+    background-color: #998672; }
+  .work-type:focus {
+    background-color: #998672;
+    color: #fff; }
 
 .work-type + .work-type {
   margin-left: 20px; }
 
-.work-type:hover {
-  background-color: #998672; }
-
 .work-type_active {
-  background-color: #998672; }
+  background-color: #998672;
+  color: #fff;
+  outline: none; }
 
 .portfolio__title {
   font-family: 'Raleway-SemiBold', sans-serif;
@@ -421,7 +432,7 @@ li {
     color: #d1d1d1; }
 
 .portfolio-item__figcaption {
-  margin-top: -4px;
+  margin-top: -5px;
   padding: 30px; }
 
 .portfolio-item__figcaption::before {
@@ -429,7 +440,7 @@ li {
   content: '';
   position: absolute;
   left: 24px;
-  bottom: 112px;
+  bottom: 111px;
   width: 0;
   height: 0;
   border-left: 14px solid transparent;
@@ -437,7 +448,7 @@ li {
   border-bottom: 11px solid #fff; }
 
 .portfolio-item:hover .portfolio-item__figcaption {
-  background-color: #362f2d;
+  background-color: rgba(54, 47, 45, 0.9);
   transition-duration: .2s; }
 
 .portfolio-item:hover .portfolio-item__figcaption::before {
@@ -466,7 +477,7 @@ li {
   align-items: center;
   opacity: 0;
   width: 100%;
-  height: 68%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   transition: opacity .2s ease-in; }
   .portfolio-item__overlay .link {
@@ -779,6 +790,10 @@ li {
     height: 10px;
     background-color: #fff; }
 
+.copyright__logo {
+  color: #fff; }
+
+/*MOBILE MENU*/
 .mobile-menu {
   display: flex;
   align-items: center;
@@ -797,10 +812,6 @@ li {
   justify-content: flex-end;
   flex: 1; }
 
-/* .mobile__search {
- 	position: relative;
- 	width: 80px;
- } */
 /*  menu */
 .burger-icon {
   cursor: pointer; }
