@@ -504,7 +504,7 @@ li {
 
 /************************* VIDEO STYLES *************************/
 .video-presentation {
-  background-image: url(../img/VIDEO-bg.jpg);
+  background-image: url(../img/video-bg.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
