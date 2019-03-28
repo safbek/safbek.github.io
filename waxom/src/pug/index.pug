@@ -1,0 +1,64 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset="UTF-8")
+        title Waxom
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.5.0/css/all.css', integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU', crossorigin='anonymous')
+        link(rel="stylesheet", href="css/main.css")
+        link(rel="stylesheet", href="css/media.css")
+        link(rel="stylesheet", href="libs/slick-lib/slick/slick.css")
+        link(rel="stylesheet", href="libs/slick-lib/slick/slick-theme.css")
+        link(rel="stylesheet", href="libs/magnific-popup/magnific-popup.css")
+    body
+        include _partials/header
+        include _partials/features
+        include _partials/works
+        include _partials/video
+        include _partials/mobile-devices
+        include _partials/counters
+        include _partials/posts
+        include _partials/partners
+        include _partials/footer
+
+        script(type="text/javascript", src="//code.jquery.com/jquery-1.11.0.min.js")
+        script(type="text/javascript", src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+        script(type="text/javascript", src="libs/slick-lib/slick/slick.min.js")
+
+        script(type='text/javascript').
+          $('.header-slider').slick({
+          dots: true,
+          });
+
+        script.
+          document.getElementById("toogler").onclick = function() {open()};
+          function open() {
+          document.getElementById("menu").classList.toggle("show");
+          }
+
+        script.
+          (function () {
+          const portfolioItems = document.querySelectorAll('.portfolio-item')
+          const workTypeButtons = document.querySelectorAll('.work-type')
+          workTypeButtons.forEach(function (button) {
+          button.addEventListener('click', function () {
+          portfolioItems.forEach(function (item) {
+          if(item.dataset.type === button.dataset.type || button.dataset.type === "all"){
+          item.style.display = "block";
+          }  else {
+          item.style.display = "none"
+          }
+          })
+          })
+          })
+          })();
+
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src='libs/magnific-popup/jquery.magnific-popup.js')
+
+        script.
+          $("#inpage_scroll_btn").magnificPopup({
+          items: {
+          src: '//www.youtube.com/watch?v=xVEfuX1wt7Q',
+          type: 'iframe'
+          }});

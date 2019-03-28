@@ -1,0 +1,17 @@
+@mixin btn {
+  color: #fff;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'Raleway-ExtraBold', sans-serif;
+  font-size: 14px;
+  background-color: $color-accent;
+  box-shadow: 0 4px 2px -1px #736357;
+  border-radius:3px;
+  letter-spacing: 1px;
+  &:hover, &:focus {
+  	outline: none;
+  	transform: scale(1.1);
+  }
+ 
+}

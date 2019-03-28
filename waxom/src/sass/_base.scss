@@ -1,0 +1,129 @@
+/** Montserrat Medium **/
+@font-face {
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Montserrat/Montserrat-Medium/Montserrat-Medium.ttf") format("ttf"),
+  url("../fonts/Montserrat/Montserrat-Medium/Montserrat-Medium.woff2") format("woff2"),
+  url("../fonts/Montserrat/Montserrat-Medium/Montserrat-Medium.woff") format("woff");
+}
+
+/** Montserrat Light **/
+@font-face {
+  font-family: "Montserrat-Light";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Montserrat/Montserrat-Light/Montserrat-Light.ttf") format("ttf"),
+  url("../fonts/Montserrat/Montserrat-Light/Montserrat-Light.woff2") format("woff2"),
+  url("../fonts/Montserrat/Montserrat-Light/Montserrat-Light.woff") format("woff");
+}
+
+/** Raleway ExtraBold **/
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: url('../fonts/Raleway/Raleway-ExtraBold/Raleway-ExtraBold.woff') format('woff'),
+       url('../fonts/Raleway/Raleway-ExtraBold/Raleway-ExtraBold.woff2') format('woff2'),
+       url('../fonts/Raleway/Raleway-ExtraBold/Raleway-ExtraBold.ttf') format('truetype'),
+       url('../fonts/Raleway/Raleway-ExtraBold/Raleway-ExtraBold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** Raleway Bold **/
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url('../fonts/Raleway/Relaway-Bold/Raleway-Bold.woff') format('woff'),
+       url('../fonts/Raleway/Relaway-Bold/Raleway-Bold.ttf') format('truetype'),
+       url('../fonts/Raleway/Relaway-Bold/Raleway-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** Raleway SemiBold **/
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url('../fonts/Raleway/Raleway-SemiBold/Raleway-SemiBold.woff') format('woff'),
+       url('../fonts/Raleway/Raleway-SemiBold/Raleway-SemiBold.ttf') format('truetype'),
+       url('../fonts/Raleway/Raleway-SemiBold/Raleway-SemiBold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** Raleway Medium **/
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url('../fonts/Raleway/Raleway-Medium/Raleway-Medium.woff') format('woff'),
+       url('../fonts/Raleway/Raleway-Medium/Raleway-Medium.ttf') format('truetype'),
+       url('../fonts/Raleway/Raleway-Medium/Raleway-Medium.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/** Raleway Regular **/
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('../fonts/Raleway/Raleway-Regular/Raleway-Regular.woff') format('woff'),
+       url('../fonts/Raleway/Raleway-Regular/Raleway-Regular.ttf') format('truetype'),
+       url('../fonts/Raleway/Raleway-Regular/Raleway-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** Raleway Light **/
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url('../fonts/Raleway/Raleway-Light/Raleway-Light.woff') format('woff'),
+       url('../fonts/Raleway/Raleway-Light/Raleway-Light.ttf') format('truetype'),
+       url('../fonts/Raleway/Raleway-Light/Raleway-Light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container {
+ /* border:1px solid red; */
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: none;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.title {
+  max-width: 750px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
