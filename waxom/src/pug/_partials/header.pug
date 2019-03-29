@@ -7,7 +7,7 @@ header.header
             img(src='img/logos.svg', alt='logo')
           .logo__text Waxom
       .block-right
-        nav.header-menu
+        nav#header-menu.header-menu
           ul.header-menu__item
             li
               a(href='#') home
@@ -27,10 +27,10 @@ header.header
               a(href='#') contact
 
         .header-icons
-          .cart.cart__icon
+          #cart.cart.cart__icon
             img.cart__icon(src='img/icons/icon-cart.svg', alt='icon-search')
           form.search
-            input.input__search(type='text', placeholder='Искать здесь...')
+            input#input-search.input__search(type='text', placeholder='Искать здесь...')
             |   
             button.btn__search(type='submit')
 
@@ -56,19 +56,18 @@ header.header
             li
               a(href='#') contact
 
-      .mobile__block-center
+      #logo.mobile__block-center
         .logo
           .logo__icon
             img(src='img/logos.svg', alt='logo')
           .logo__text Waxom
 
-      .mobile__block-right
+      #icons.mobile__block-right
         .header-icons
           .cart.cart__icon
             img.cart__icon(src='img/icons/icon-cart.svg', alt='icon-search')
           form.search
-            input.input__search(type='text', placeholder='Искать здесь...')
-            |   
+            input.input__search(type='text', placeholder='Искать здесь...')   
             button.btn__search(type='submit')
 
   .container

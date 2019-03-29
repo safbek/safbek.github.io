@@ -107,11 +107,6 @@
   width: 300px;
   z-index: 1;
   border-bottom: 2px solid #F9F0DA;
-  
-}
-
-.input__search:focus nav.header-menu {
-	display: none;
 }
 
 .btn__search {
@@ -956,6 +951,9 @@
 
 .show {
   display: block;
+}
+.block-hidden {
+	display: none;
 }
 
 .mobile-nav{

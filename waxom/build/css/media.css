@@ -323,6 +323,10 @@
   .mobile__br {
     display: block;
   }
+  /* MOBILE MENU STYLES*/
+  .mobile-menu {
+    padding-top: 20px;
+  }
   /* HEADER STYLES */
   .logo__text {
     font-size: 28px;
@@ -415,6 +419,7 @@
   body {
     background-color: gold;
   }
+  /* PORTFOLIO MENU STYLES*/
   .portfolio-item__figcaption::before {
     display: none;
   }

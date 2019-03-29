@@ -403,6 +403,11 @@
     display: block;
   }
 
+  /* MOBILE MENU STYLES*/
+    .mobile-menu {
+      padding-top: 20px;
+    }
+
     /* HEADER STYLES */
     .logo {
       &__text {
@@ -519,14 +524,15 @@
     body{
       background-color: gold;
     }
-
-  .portfolio-item__figcaption::before {
-    display: none; 
+    
+    /* PORTFOLIO MENU STYLES*/
+    .portfolio-item__figcaption::before {
+      display: none; 
+    }
+    .portfolio-item__overlay {
+      height: 100%;
+    }
   }
-  .portfolio-item__overlay {
-    height: 100%;
-  }
-}
 
 body{
   background-color: #fff;

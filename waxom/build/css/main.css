@@ -230,10 +230,6 @@ li {
   border-bottom: 2px solid #F9F0DA;
 }
 
-.input__search:focus nav.header-menu {
-  display: none;
-}
-
 .btn__search {
   background: transparent;
   border: none;
@@ -1107,6 +1103,10 @@ li {
 
 .show {
   display: block;
+}
+
+.block-hidden {
+  display: none;
 }
 
 .mobile-nav {

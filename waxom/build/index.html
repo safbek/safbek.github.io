@@ -22,7 +22,7 @@
             </div>
           </div>
           <div class="block-right">
-            <nav class="header-menu">
+            <nav class="header-menu" id="header-menu">
               <ul class="header-menu__item">
                 <li><a href="#">home</a></li>
                 <li><a href="#">about us</a></li>
@@ -35,9 +35,9 @@
               </ul>
             </nav>
             <div class="header-icons">
-              <div class="cart cart__icon"><img class="cart__icon" src="img/icons/icon-cart.svg" alt="icon-search"></div>
+              <div class="cart cart__icon" id="cart"><img class="cart__icon" src="img/icons/icon-cart.svg" alt="icon-search"></div>
               <form class="search">
-                <input class="input__search" type="text" placeholder="Искать здесь...">  
+                <input class="input__search" id="input-search" type="text" placeholder="Искать здесь...">  
                 <button class="btn__search" type="submit"></button>
               </form>
             </div>
@@ -63,17 +63,17 @@
               </ul>
             </nav>
           </div>
-          <div class="mobile__block-center">
+          <div class="mobile__block-center" id="logo">
             <div class="logo">
               <div class="logo__icon"><img src="img/logos.svg" alt="logo"></div>
               <div class="logo__text">Waxom</div>
             </div>
           </div>
-          <div class="mobile__block-right">
+          <div class="mobile__block-right" id="icons">
             <div class="header-icons">
               <div class="cart cart__icon"><img class="cart__icon" src="img/icons/icon-cart.svg" alt="icon-search"></div>
               <form class="search">
-                <input class="input__search" type="text" placeholder="Искать здесь...">  
+                <input class="input__search" type="text" placeholder="Искать здесь...">
                 <button class="btn__search" type="submit"></button>
               </form>
             </div>
@@ -546,18 +546,31 @@
       mobileFirst: true,
       }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
       ]
       });
-      
       
     </script>
     <script>
       document.getElementById("toogler").onclick = function() {open()};
       function open() {
       document.getElementById("menu").classList.toggle("show");
+      document.getElementById("logo").classList.toggle("block-hidden");
+      document.getElementById("icons").classList.toggle("block-hidden");
+      }
+      
+    </script>
+    <script>
+      document.getElementById("input-search").onfocus = function() {closeMenu()};
+      function closeMenu() {
+      document.getElementById("header-menu").classList.toggle("block-hidden");
+      document.getElementById("cart").classList.toggle("block-hidden");
+      }
+    </script>
+    <script>
+      document.getElementById("input-search").onblur = function() {openMenu()};
+      function openMenu() {
+      document.getElementById("header-menu").classList.toggle("block-hidden");
+      document.getElementById("cart").classList.toggle("block-hidden");
       }
       
     </script>

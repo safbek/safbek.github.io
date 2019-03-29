@@ -63,17 +63,28 @@ html(lang='en')
           mobileFirst: true,
           }
           }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
           ]
           });
-
 
         script.
           document.getElementById("toogler").onclick = function() {open()};
           function open() {
           document.getElementById("menu").classList.toggle("show");
+          document.getElementById("logo").classList.toggle("block-hidden");
+          document.getElementById("icons").classList.toggle("block-hidden");
+          }
+
+        script.
+          document.getElementById("input-search").onfocus = function() {closeMenu()};
+          function closeMenu() {
+          document.getElementById("header-menu").classList.toggle("block-hidden");
+          document.getElementById("cart").classList.toggle("block-hidden");
+          }
+        script.
+          document.getElementById("input-search").onblur = function() {openMenu()};
+          function openMenu() {
+          document.getElementById("header-menu").classList.toggle("block-hidden");
+          document.getElementById("cart").classList.toggle("block-hidden");
           }
 
         script.
