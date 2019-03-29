@@ -378,6 +378,22 @@
     margin: 20px auto 0;
   }
 
+    .posts-item__content {
+      left: 10px;
+      top: 10px;
+      font-size: 12px;
+    }
+
+    .posts__day {
+      width: 38px;
+      height: 25px;
+      padding-top: 6px;
+    }
+
+    .posts__month {
+      width: 38px;
+    }
+
   /* PARTNERS STYLES */
   .partners {
     padding: 70px 0;
@@ -482,22 +498,7 @@
       font-size: 14px;
     }
 
-    /* POSTS STYLES */
-    .posts-item__content {
-      left: 10px;
-      top: 10px;
-      font-size: 12px;
-    }
-
-    .posts__day {
-      width: 38px;
-      height: 25px;
-      padding-top: 6px;
-    }
-
-    .posts__month {
-      width: 38px;
-    }
+    
 
     /* FOOTER STYLES */
     .footer {
@@ -534,6 +535,6 @@
     }
   }
 
-body{
+/* body{
   background-color: #fff;
-}
+} */
