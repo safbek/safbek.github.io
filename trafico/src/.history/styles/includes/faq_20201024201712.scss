@@ -1,0 +1,52 @@
+.faq {
+    @include section_common_styles;
+}
+
+.container_faq {
+    display: flex;
+    flex-direction: column;
+    // :after {
+    //     content: '';
+    //     position: absolute;
+    //     width: 200px;
+    //     height: 60px;
+    //     // background-color: #FDEDE8;
+    //     background-color: red;
+    // }
+}
+
+.faq:before {
+    content:"";
+    position:absolute;
+    right: 0;
+    width:70%;
+    height: 200vh;
+    background-color: red;
+    border-radius:50% 0 0 0;
+}
+
+.question {
+    @include question_styles;
+}
+
+.fa-plus {
+    color: $accent;
+    background-color: #fff;
+}
+
+.btn_load_more {
+    @include question_styles;
+    justify-content: center;
+    background-color: pink;
+    text-transform: uppercase;
+    color: $accent;
+}
+
+.block_first, .block_second {
+    display: flex;
+    justify-content: center;
+}
+
+.faq_text {
+    font-size: 48px;
+}

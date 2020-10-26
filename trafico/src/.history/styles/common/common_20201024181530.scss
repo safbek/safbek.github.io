@@ -1,0 +1,14 @@
+body {
+    background-color: $bg_color;
+}
+.container {
+    @include container;
+}
+
+h2 {
+    @include h2Style;
+}
+
+.description {
+    @include description;
+}

@@ -1,0 +1,19 @@
+.carousel {
+    @include section_common_styles;
+}
+
+figure {
+    display: inline-block; /* Выстраиваем по горизонтали */
+    background: #85ab6f; /* Цвет фона */
+    padding: 10px; /* Поля */
+    margin: 0 1em 0 0; /* Отступ справа */
+    vertical-align: center; /* Выравниваем по верхнему краю */
+   }
+figcaption { 
+    text-align: center; /* Выравниваем по центру */
+}
+
+figure.right figcaption {
+    float: right; /* Добавляем текст справа */
+    padding: 5px; /* Поля вокруг текста */
+}

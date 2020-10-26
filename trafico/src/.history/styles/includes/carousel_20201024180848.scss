@@ -1,0 +1,12 @@
+.carousel {
+    @include section_common_styles;
+}
+
+.reviews_block {
+    @include reviews;
+}
+
+figure {
+    display: inline-block;
+    margin: 0 1em 0 0;
+   }

@@ -1,0 +1,55 @@
+@import "../mixins/media";
+@import "../mixins/reusableStyles";
+
+
+header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: pink;
+    // @include media-tablet {
+    //     width: 500px;
+    // }
+}
+
+.header_nav {
+    width: 80%;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: yellow;
+
+    .nav_item {
+        display: inline-block;
+        margin-left: 70px;
+        a {
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+
+    .header_btn {
+        @include btn;
+    }
+}
+
+.header_intro {
+    // display: flex;
+    position: absolute;
+    top: 20%;
+    // left: 0;
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #fff;
+    .intro_text {
+        max-width: 750px;
+        font-size: 65px;
+    }
+    .intro_btn {
+        margin-top: 50px;
+        padding: 20px;
+        @include btn;
+    }
+}

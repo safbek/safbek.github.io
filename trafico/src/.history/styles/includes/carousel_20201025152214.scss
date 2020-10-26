@@ -1,0 +1,35 @@
+
+.carousel {
+    @include section_common_styles;
+}
+
+.container_carousel {
+    width: 90%;
+    justify-content: end;
+}
+
+.carousel_block_right {
+    display: flex;
+}
+
+.reviews_block {
+    @include reviews;
+    margin-right: 20px;
+    max-width: 420px;
+    min-width: 350px;
+}
+
+.reviews_figure {
+    display: inline-block;
+    margin: 30px 1em 0 0;
+   }
+
+.reviews_figure.right .reviews_figcaption.right {
+    float: right;
+    padding: 20px;
+}
+
+.reviews_text {
+    font-family: 'DM Serif Display', serif;
+    font-size: 100px;
+}

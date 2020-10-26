@@ -1,0 +1,11 @@
+.about_us {
+    width: 900px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+}
+
+.about_us_question {
+  @include note;
+}

@@ -1,0 +1,27 @@
+.reviews {
+    @include section_common_styles;
+    // background-color: green;
+}
+
+.reviews_wrap {
+    display: flex;
+}
+
+.reviews_block {
+    @include reviews;
+}
+
+.reviews_figure {
+    display: inline-block;
+    margin: 30px 1em 0 0;
+   }
+
+.reviews_figure.right .reviews_figcaption.right {
+    float: right;
+    padding: 20px;
+}
+
+.reviews_text {
+    font-family: 'DM Serif Display', serif;
+    font-size: 100px;
+}

@@ -1,0 +1,16 @@
+.faq {
+    @include section_common_styles;
+    background-color: pink;
+}
+
+.question {
+    @include question_styles;
+}
+
+.faq_icon {
+    color: $accent;
+}
+
+.btn_load_more {
+
+}

@@ -1,0 +1,19 @@
+doctype html
+html(lang="ru")
+    block head
+        head
+            meta(charset="utf-8")
+            title Title your site
+            meta(content="width=device-width, initial-scale=1" name="viewport")
+            meta(content="ie=edge" http-equiv="x-ua-compatible")
+            link(rel="stylesheet" href="css/style.min.css")
+            link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=DMSerifDisplay|Rubik:bold,medium,light")
+            script(src="https://kit.fontawesome.com/07c4312341.js")
+    body
+        block header
+            include header
+        block content
+        block footer
+            include footer
+        block scripts
+            script(src='js/main.min.js')

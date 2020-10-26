@@ -1,0 +1,103 @@
+.footer {
+    position: relative;
+}
+
+.footer_container {
+    align-items: center;
+}
+
+.footer_feedback_block {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_note {
+    @include note;
+    margin-top: 150px;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'Rubik' serif;
+}
+
+// FORM
+.footer_form_wrap {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.footer_form_label {
+    padding-bottom: 10px;
+}
+
+.form-example {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.footer_input {
+    outline: none;
+    border: 1px solid $main_color;
+    border-radius: 5px;
+    padding: 10px;
+    &:focus {
+        border: 2px solid $accent;
+        box-shadow: -5px 10px 20px #FED1CF, 5px 10px 20px #FED1CF;
+    }
+}
+
+.footer_btn {
+    @include btn;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Rubik' serif;
+    font-weight: bold;
+    font-size: 16px;
+    &_arrow {
+        padding-left: 20px;
+    }
+}
+
+// Footer Menu Styles
+.footer_nav {
+    position: absolute;
+    // bottom: 250px;
+    bottom: 250px;
+    margin: auto;
+}
+
+//Social styles
+.footer_social_block {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    font-family: 'Rubik', serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.social_icons {
+    display: flex;
+    a {
+        color: #fff;
+    }
+}
+
+.social_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: $accent;
+    color: #fff;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}

@@ -1,0 +1,59 @@
+@import "../mixins/media";
+@import "../mixins/reusableStyles";
+
+
+header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: pink;
+    // @include media-tablet {
+    //     width: 500px;
+    // }
+}
+
+.header_nav {
+    width: 80%;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: yellow;
+
+    .nav_item {
+        display: inline-block;
+        margin-left: 70px;
+        a {
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+
+    .header_btn {
+        @include btn;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // width: 200px;
+        // border-radius: 5px;
+        // background-color: #EE4D47;
+        // color: #000;
+        a {
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.header_intro {
+    position: absolute;
+    top: 40%;
+    max-width: 750px;
+    font-size: 25px;
+    text-transform: uppercase;
+    .intro_btn {
+        @extend .header_btn;
+    }
+}
+
+

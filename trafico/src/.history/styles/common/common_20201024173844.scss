@@ -1,0 +1,13 @@
+body {
+    background-color: $bg_color;
+}
+.container {
+    @include container;
+}
+
+h2 {
+    @include h2Style;
+    font-family: 'Rubik' serif;
+    font-weight: bold;
+    font-size: 24px;
+}

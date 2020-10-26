@@ -1,0 +1,8 @@
+.faq {
+    @include section_common_styles;
+    background-color: pink;
+}
+
+.question {
+    @include question_styles;
+}

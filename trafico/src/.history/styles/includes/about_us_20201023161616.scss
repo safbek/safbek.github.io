@@ -1,0 +1,27 @@
+.about_us {
+    width: 100%;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+.block_left, .block_right {
+    width: 40%;
+}
+.block_left {
+    margin-right: 60px;
+}
+
+.about_us_text {
+    margin-top: 50px;
+    line-height: 2;
+}
+
+.about_us_question {
+  @include note;
+  margin-top: 50px;
+  font-weight: bold;
+}
+

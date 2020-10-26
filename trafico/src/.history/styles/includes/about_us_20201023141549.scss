@@ -1,0 +1,15 @@
+.about_us {
+    // display: flex;
+    // justify-content: center;
+    // background-color: orange;
+}
+
+// .block_left, .block_right {
+//     width: 40%;
+// }
+.container {
+    @include container;
+}
+.about_us_question {
+  @include note;
+}

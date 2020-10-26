@@ -1,0 +1,16 @@
+.faq {
+    @include section_common_styles;
+    height: 700px;
+    background-color: pink;
+}
+
+.question {
+    @include question_styles;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fqa_icon {
+    margin-left: 20px;
+}

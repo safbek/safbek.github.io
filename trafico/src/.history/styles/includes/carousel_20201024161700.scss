@@ -1,0 +1,23 @@
+.carousel {
+    @include section_common_styles;
+}
+
+.reviews_block {
+    @include reviews;
+}
+
+figure {
+    display: inline-block;
+    margin: 0 1em 0 0;
+   }
+
+figure.right figcaption {
+    float: right;
+    padding: 20px; /* Поля вокруг текста */
+}
+
+.intro_text {
+    font-family: 'DM Serif Display', serif;
+    font-style: bold;
+    font-size: 48px;
+}

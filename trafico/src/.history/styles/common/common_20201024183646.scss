@@ -1,0 +1,18 @@
+body {
+    background-color: $bg_color;
+}
+.container {
+    @include container;
+}
+
+h2 {
+    @include h2Style;
+}
+
+.h2_like {
+    font-family: 'DM Serif Display', serif;
+}
+
+.description {
+    @include description;
+}

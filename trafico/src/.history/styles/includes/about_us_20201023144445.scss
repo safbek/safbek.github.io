@@ -1,0 +1,20 @@
+.about_us {
+    width: 100%;
+    text-align: center;
+}
+
+.block_left, .block_right {
+    width: 40%;
+}
+
+.about_us_text {
+    // @include note;
+  }
+
+.about_us_question {
+  @include note;
+}
+
+.container_about_us {
+    @include container;
+}

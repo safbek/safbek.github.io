@@ -1,0 +1,54 @@
+
+.carousel {
+    @include section_common_styles;
+    justify-content: flex-end;
+}
+
+.container_carousel {
+    width: 90%;
+}
+
+.carousel_block_right {
+    position: relative;
+    display: flex;
+    padding-top: 80px;
+}
+
+.carousel_block_right:before {
+    content: '\f1ea';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: red;
+}
+
+// .carousel_block_right:after {
+//     content: 'jjjj';
+//     position: absolute;
+    
+//     width: 60px;
+//     height: 60px;
+//     background-color: green;
+// }
+
+.reviews_block {
+    @include reviews;
+    margin-right: 20px;
+    max-width: 420px;
+    min-width: 350px;
+}
+
+.reviews_figure {
+    display: inline-block;
+    margin: 30px 1em 0 0;
+   }
+
+.reviews_figure.right .reviews_figcaption.right {
+    float: right;
+    padding: 20px;
+}
+
+.reviews_text {
+    font-family: 'DM Serif Display', serif;
+    font-size: 100px;
+}

@@ -1,0 +1,13 @@
+.footer_feedback_block {
+
+}
+
+.footer_social_block {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 100px;
+}
+
+.fa-facebook-f, .fa-twitter, .fa-instagram {
+    background-color: $accent;
+}

@@ -1,0 +1,28 @@
+@import "../mixins/media";
+
+header {
+    background-color: pink;
+    position: relative;
+
+    // @include media-tablet {
+    //     width: 500px;
+    // }
+}
+
+.header_nav {
+    width: 80%;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: red;
+    &_logo {
+        width: 50%;
+    }
+    &_menu {
+        width: 50%;
+    }
+    li {
+        display: inline-flex;
+    }
+}

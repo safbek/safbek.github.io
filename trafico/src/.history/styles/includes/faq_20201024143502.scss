@@ -1,0 +1,34 @@
+.faq {
+    @include section_common_styles;
+    background-color: #FDEDE8
+}
+
+.container_faq {
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    @include question_styles;
+}
+
+.fa-plus {
+    color: $accent;
+}
+
+.btn_load_more {
+    @include question_styles;
+    justify-content: center;
+    background-color: pink;
+    text-transform: uppercase;
+    color: $accent;
+}
+
+.block_first, .block_second {
+    display: flex;
+    justify-content: center;
+}
+
+.faq_text {
+    font-size: 48px;
+}

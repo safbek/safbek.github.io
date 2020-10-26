@@ -1,0 +1,49 @@
+body {
+    background-color: $bg_color;
+}
+.container {
+    @include container;
+}
+
+h2 {
+    @include h2Style;
+}
+
+.h2_like {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+}
+
+.description {
+    @include description;
+}
+
+.common_nav {
+    width: 80%;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Rubik', serif;
+    font-weight: bold;
+
+    .nav_item {
+        display: inline-block;
+        margin-left: 70px;
+        &:hover {
+            transform: scale(1.3);
+        }
+        a {
+            color: #fff;
+            text-transform: uppercase;
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+}
+
+.btn:hover {
+    background-color: #3e8e41;
+    opacity: 2;
+}

@@ -1,0 +1,29 @@
+@mixin btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border-radius: 5px;
+    background-color: $accent;
+    color: #000;
+    a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+}
+
+@mixin note {
+    max-width: 570px;
+    padding: 50px 30px;
+    background-color: #FCDDD4;
+    border-left: 10px solid $accent;
+    font-size: 25px;
+}
+
+@mixin container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+}

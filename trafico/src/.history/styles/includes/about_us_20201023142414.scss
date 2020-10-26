@@ -1,0 +1,16 @@
+.about_us {
+    @include container;
+}
+
+.block_left, .block_right {
+    width: 40%;
+}
+
+.about_us_text {
+    // @include note;
+    fz20
+  }
+
+.about_us_question {
+  @include note;
+}

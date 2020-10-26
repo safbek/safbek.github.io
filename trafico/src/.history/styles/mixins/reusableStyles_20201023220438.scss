@@ -1,0 +1,56 @@
+@mixin btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border-radius: 5px;
+    background-color: $accent;
+    color: #000;
+    a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+}
+
+@mixin note {
+    max-width: 570px;
+    padding: 30px;
+    background-color: #FCDDD4;
+    border-left: 10px solid $accent;
+    font-size: 25px;
+}
+
+@mixin container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    // background-color: yellow;
+}
+
+@mixin h2Style {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $accent;
+}
+
+@mixin section_common_styles {
+    width: 100%;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+@mixin question_styles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 550px;
+    p {
+        text-wrap: none;
+    }
+}

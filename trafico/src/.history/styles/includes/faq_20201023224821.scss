@@ -1,0 +1,20 @@
+.faq {
+    @include section_common_styles;
+    background-color: pink;
+}
+
+.question {
+    @include question_styles;
+}
+
+.fa-plus {
+    color: $accent;
+}
+
+.btn_load_more {
+    @include question_styles;
+    background-color: pink;
+    text-align: center;
+    text-transform: uppercase;
+    color: $accent;
+}

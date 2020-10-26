@@ -1,0 +1,22 @@
+.reviews {
+    @include section_common_styles;
+}
+
+.reviews_block {
+    @include reviews;
+}
+
+.reviews_figure {
+    display: inline-block;
+    margin: 0 1em 0 0;
+   }
+
+.reviews_figure.right .carousel_figcaption {
+    float: right;
+    padding: 20px;
+}
+
+.reviews_text {
+    font-family: 'DM Serif Display', serif;
+    font-size: 100px;
+}

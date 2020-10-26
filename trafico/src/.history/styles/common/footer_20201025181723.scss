@@ -1,0 +1,26 @@
+.footer_feedback_block {
+
+}
+
+.footer_social_block {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 100px;
+}
+
+.social_icons {
+    display: flex;
+}
+
+.social_icon {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: $accent;
+    color: #fff;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
