@@ -13,9 +13,7 @@ header {
 }
 
 .header_btn {
-
     @include btn;
-
     @include media-tablet-laptop {
         width: 160px;
     }

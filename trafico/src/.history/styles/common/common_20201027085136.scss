@@ -3,26 +3,22 @@ body {
 }
 
 .container {
-
     @include container;
 }
 
 h2 {
-
     @include h2Style;
 }
 
 .h2_like {
     font-family: "DM Serif Display", serif;
     font-size: 48px;
-
     @include media-tablet-laptop {
         font-size: 38px;
     }
 }
 
 .description {
-
     @include description;
 }
 
@@ -37,15 +33,12 @@ h2 {
     .nav_item {
         display: inline-block;
         margin-left: 70px;
-
         &:hover {
             transform: scale(1.1);
         }
-
         a {
             color: #ffffff;
             text-transform: uppercase;
-
             &:hover {
                 color: $accent;
             }

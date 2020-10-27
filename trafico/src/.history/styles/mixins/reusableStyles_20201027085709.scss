@@ -5,12 +5,11 @@
     width: 200px;
     border-radius: 5px;
     background-color: $accent;
-    color: #000000;
-
+    color: #000;
     a {
-        color: #ffffff;
+        color: #fff;
         text-transform: uppercase;
-        font-family: "Rubik", serif;
+        font-family: 'Rubik' serif;
         font-weight: bold;
         font-size: 16px;
     }
@@ -19,10 +18,10 @@
 @mixin note {
     max-width: 570px;
     padding: 30px;
-    background-color: #fcddd4;
+    background-color: #FCDDD4;
     border-left: 8px solid $accent;
     border-radius: 5px 0 0 5px;
-    font-family: "Rubik", serif;
+    font-family: 'Rubik', serif;
     font-weight: 500;
     font-size: 18px;
 }
@@ -34,9 +33,10 @@
 }
 
 @mixin h2Style {
+    font-size: 24px;
     text-transform: uppercase;
     color: $accent;
-    font-family: "Rubik", serif;
+    font-family: 'Rubik', serif;
     font-weight: bold;
     font-size: 24px;
 }
@@ -56,21 +56,21 @@
     height: 100px;
     padding: 0 25px;
     margin-top: 20px;
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 10px;
-    font-family: "Rubik", serif;
+    font-family: 'Rubik', serif;
     font-weight: 500;
     font-size: 18px;
 }
 
 @mixin reviews {
     padding: 40px;
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 10px;
 }
 
 @mixin description {
-    font-family: "Rubik", serif;
+    font-family: 'Rubik', serif;
     font-weight: 300;
     font-size: 18px;
 }

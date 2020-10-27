@@ -1,13 +1,10 @@
 .about_us {
-
     @include section_common_styles;
 }
 
-.block_left,
-.block_right {
+.block_left, .block_right {
     width: 40%;
 }
-
 .block_left {
     margin-right: 60px;
 }
@@ -18,8 +15,6 @@
 }
 
 .about_us_note {
-
-    @include note;
-
-    margin-top: 40px;
+  @include note;
+  margin-top: 40px;
 }

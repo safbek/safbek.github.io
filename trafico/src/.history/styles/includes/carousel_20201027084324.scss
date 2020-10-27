@@ -1,7 +1,6 @@
+
 .carousel {
-
     @include section_common_styles;
-
     justify-content: flex-end;
     margin-bottom: 150px;
 }
@@ -16,9 +15,9 @@
     padding-top: 80px;
 }
 
-.carousel_block_right::before {
-    content: "\f30a";
-    font-family: "Font Awesome 5 Free", sans-serif;
+.carousel_block_right:before {
+    content: '\f30a';
+    font-family: "Font Awesome 5 Free";
     font-weight: 700;
     position: absolute;
     top: 20px;
@@ -26,9 +25,9 @@
     color: $accent;
 }
 
-.carousel_block_right::after {
-    content: "\f30b";
-    font-family: "Font Awesome 5 Free", sans-serif;
+.carousel_block_right:after {
+    content: '\f30b';
+    font-family: "Font Awesome 5 Free";
     font-weight: 700;
     position: absolute;
     top: 20px;
@@ -37,9 +36,7 @@
 }
 
 .reviews_block {
-
     @include reviews;
-
     margin-right: 20px;
     max-width: 420px;
     min-width: 320px;
@@ -48,21 +45,19 @@
 .reviews_figure {
     display: inline-block;
     margin: 30px 1em 0 0;
-}
+   }
 
-.reviews_figure.right,
-.reviews_figcaption.right {
+.reviews_figure.right .reviews_figcaption.right {
     float: right;
     padding: 20px;
 }
 
 .reviews_text {
-    font-family: "DM Serif Display", serif;
+    font-family: 'DM Serif Display', serif;
     font-size: 100px;
 }
 
 .h2_like {
-
     @mixin media-tablet-laptop {
         font-size: 38px;
     }

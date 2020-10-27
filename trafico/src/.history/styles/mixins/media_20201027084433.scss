@@ -29,7 +29,6 @@
 }
 
 @mixin media-tablet-laptop {
-
     @media (min-width: $mediaWidthTabletHorizontal) and (max-width: $mediaWidthLaptop) {
         @content;
     }

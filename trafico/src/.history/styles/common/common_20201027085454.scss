@@ -15,7 +15,6 @@ h2 {
 .h2_like {
     font-family: "DM Serif Display", serif;
     font-size: 48px;
-
     @include media-tablet-laptop {
         font-size: 38px;
     }
