@@ -1,0 +1,18 @@
+.apply {
+
+    @include section_common_styles;
+
+    margin-bottom: 270px;
+
+    &_block_left {
+        // margin-right: 120px;
+        width: 60%;
+        margin-top: -50px;
+        margin-left: -50px;
+    }
+
+    // &_block_left,
+    &_block_right {
+        width: 40%;
+    }
+}

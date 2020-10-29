@@ -1,0 +1,79 @@
+.carousel {
+
+    @include section_common_styles;
+
+    margin-bottom: 150px;
+
+    &_container {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+.carousel_block_left {
+    max-width: 300px;
+    margin-left: 180px;
+}
+
+.carousel_block_right {
+    position: relative;
+    display: flex;
+    padding-top: 110px;
+}
+
+.reviews_img {
+    width: 60px;
+    height: 60px;
+}
+.carousel_block_right::before {
+    content: "\f30a";
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 20px;
+    left: 45%;
+    color: $accent;
+}
+
+.carousel_block_right::after {
+    content: "\f30b";
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 700;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    color: $accent;
+}
+
+.reviews_block {
+
+    @include reviews;
+
+    margin-right: 20px;
+    // max-width: 550px;
+    // min-width: 320px;
+}
+
+.reviews_figure {
+    display: inline-block;
+    // margin: 20px 1em 0 0;
+    margin-top: 0;
+}
+
+.reviews_figure.right,
+.reviews_figcaption.right {
+    float: right;
+}
+
+// .reviews_text {
+//     font-family: "DM Serif Display", serif;
+//     font-size: 100px;
+// }
+
+.h2_like {
+
+    @mixin media-tablet-laptop {
+        font-size: 38px;
+    }
+}

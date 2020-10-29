@@ -1,0 +1,32 @@
+.about {
+
+    @include section_common_styles;
+
+    margin-bottom: 240px;
+}
+
+// .about_block_left,
+// .about_block_right {
+//     width: 50%;
+// }
+
+.about_block_left {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.about_block_right {
+    width: 60%;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.about_text {
+    max-width: 430px;
+    margin: 65px 0 65px;
+}
+
+.about_note {
+
+    @include note;
+}

@@ -1,0 +1,11 @@
+.apply {
+
+    @include section_common_styles;
+    margin-bottom: 200px;
+
+    &_block_left,
+    &_block_right {
+        width: 35%;
+        margin-left: 0;
+    }
+}

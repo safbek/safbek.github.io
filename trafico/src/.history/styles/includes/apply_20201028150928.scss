@@ -1,0 +1,21 @@
+.apply {
+
+    @include section_common_styles;
+
+    margin-bottom: 270px;
+
+    &_block_left {
+        margin-right: 120px;
+        padding-bottom: -50px;
+    }
+
+    &_block_left,
+    &_block_right {
+        width: 50%;
+    }
+
+    &_img {
+        max-width: 550px;
+        // width: 100%;
+    }
+}

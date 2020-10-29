@@ -1,0 +1,26 @@
+.about_us {
+
+    @include section_common_styles;
+}
+
+.block_left,
+.block_right {
+    width: 40%;
+}
+
+.block_left {
+    margin-right: 80px;
+}
+
+.about_us_text {
+    max-width: 430px;
+    margin-top: 65px 0 65px;
+    // line-height: 2;
+}
+
+.about_us_note {
+
+    @include note;
+
+    margin-top: 40px;
+}

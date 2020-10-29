@@ -1,0 +1,65 @@
+body {
+    background-color: $bg_color;
+    font-size: 18px;
+}
+
+.container {
+
+    @include container;
+}
+
+h2 {
+
+    @include h2Style;
+}
+
+.h2_like {
+    font-family: "DM Serif Display", serif;
+    font-size: 48px;
+
+    @include media-tablet-laptop {
+        font-size: 38px;
+    }
+}
+
+.description {
+
+    @include description;
+}
+
+.common_nav {
+    width: 80%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Rubik", serif;
+    font-weight: bold;
+
+    .nav_item {
+        display: inline-block;
+        margin-left: 70px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        a {
+            color: #ffffff;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+}
+
+.btn:hover,
+.social_icon:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+// img {
+//     width: 100%;
+// }

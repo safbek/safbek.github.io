@@ -1,0 +1,22 @@
+.about_us {
+
+    @include section_common_styles;
+}
+
+.block_left,
+.block_right {
+    width: 40%;
+}
+
+.block_left {
+    margin-right: 80px;
+}
+
+.about_us_text {
+
+}
+
+.about_us_note {
+
+    @include note;
+}

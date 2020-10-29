@@ -1,0 +1,85 @@
+@mixin btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: $accent;
+    color: #000000;
+
+    a {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: "Rubik", serif;
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+
+@mixin note {
+    max-width: 570px;
+    padding: 30px 55px;
+    background-color: #fcddd4;
+    border-left: 8px solid $accent;
+    border-radius: 5px 0 0 5px;
+    font-family: "Rubik", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0em;
+}
+
+@mixin container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin h2Style {
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    color: $accent;
+    font-family: "Rubik", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+}
+
+@mixin section_common_styles {
+    width: 100%;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+@mixin question_styles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 25px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-family: "Rubik", serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+@mixin reviews {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+@mixin description {
+    font-family: "Rubik", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0em;
+}
