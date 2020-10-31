@@ -1,0 +1,107 @@
+@import "../mixins/media";
+
+@import "../mixins/reusableStyles";
+
+header {
+
+    @include section_common_styles;
+
+    position: relative;
+    margin-bottom: 120px;
+}
+
+// .header_nav {
+//     width: 80%;
+//     top: 45px;
+// }
+
+
+.header_nav {
+    width: 80%;
+    position: absolute;
+    top: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Rubik", serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+
+   
+
+    .nav_item {
+        display: inline-block;
+        // margin-right: 80px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        a {
+            color: #ffffff;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $accent;
+            }
+        }
+    }
+}
+
+// .header_logo {
+//     flex: 1;
+// }
+
+// .header_menu {
+//     flex: 2;
+// }
+
+// .header_ul {
+//     max-width: 200px;
+//     display: flex;
+//     justify-content: space-around;
+// }
+
+.header_btn {
+
+    @include btn;
+
+    width: 160px;
+    // flex: 1;
+}
+
+.header_intro {
+    position: absolute;
+    top: 16%;
+    width: 70%;
+    color: #ffffff;
+
+    .intro_text {
+        max-width: 730px;
+        font-size: 100px;
+        line-height: 100px;
+        letter-spacing: 5px;
+
+        @include media-tablet-laptop {
+            width: 450px;
+            font-size: 50px;
+            line-height: 70px;
+        }
+    }
+
+    .intro_btn {
+        margin-top: 60px;
+        width: 220px;
+        height: 60px;
+
+        @include btn;
+    }
+
+    .intro_btn_icon {
+        color: #ffffff;
+        font-size: 35px;
+        padding-left: 25px;
+    }
+}

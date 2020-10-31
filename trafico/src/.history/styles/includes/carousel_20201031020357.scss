@@ -1,0 +1,75 @@
+.carousel {
+
+    @include section_common_styles;
+
+    margin-bottom: 162px;
+
+    &_container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.carousel_block_left {
+    max-width: 300px;
+    margin-left: 136px;
+    margin-right: 80px;
+}
+
+.carousel_block_right {
+    position: relative;
+    display: flex;
+    padding-top: 110px;
+}
+
+.reviews_img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.carousel_block_right::before,
+.carousel_block_right::after {
+    position: absolute;
+    top: 26px;
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 700;
+    font-size: 33px;
+    color: $accent;
+
+    @include media-tablet-laptop {
+        font-size: 25px;
+    }
+}
+
+.carousel_block_right::before {
+    content: "\f30a";
+    left: 75%;
+}
+
+.carousel_block_right::after {
+    content: "\f30b";
+    left: 80%;
+}
+
+.reviews_block {
+
+    @include reviews;
+
+    margin-right: 20px;
+    box-shadow: -5px 10px 20px #fdede8, 5px 10px 20px #fdede8;
+}
+
+.reviews_figure {
+    display: flex;
+    align-items: center;
+    margin-top: 85px;
+}
+
+.h2_like {
+
+    @include media-tablet-laptop {
+        font-size: 38px;
+    }
+}

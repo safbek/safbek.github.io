@@ -1,0 +1,39 @@
+@import "../../local_modules/normalize.css/normalize";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body,
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    // width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input,
+button {
+    outline: none;
+}
+
+figure {
+    margin: 0;
+}
